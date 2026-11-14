@@ -11,6 +11,7 @@
 import 'dotenv/config';
 import { readdirSync, readFileSync } from 'node:fs';
 import { databaseClass } from '@bloomneo/appkit/database';
+import { OUT_OF_SYLLABUS } from './curriculum.data.js';
 
 const dir = new URL('../../docs/content/question-patterns/', import.meta.url);
 const history = new URL('../../docs/content/board-history.json', import.meta.url);
@@ -38,7 +39,7 @@ async function main() {
       let topic = await db.curriculumNode.findFirst({ where: { kind: 'topic', name: t.name, parentId: chapter.id } });
       if (!topic) {
         const last = await db.curriculumNode.aggregate({ where: { parentId: chapter.id }, _max: { position: true } });
-        topic = await db.curriculumNode.create({ data: { kind: 'topic', name: t.name, parentId: chapter.id, position: (last._max.position ?? 0) + 1 } });
+        topic = await db.curriculumNode.create({ data: { kind: 'topic', name: t.name, parentId: chapter.id, position: (last._max.position ?? 0) + 1, isActive: !OUT_OF_SYLLABUS.has(t.name) } });
         topicsAdded++;
       }
       for (const p of t.patterns) {

@@ -3,6 +3,31 @@
  * papers (docs/content/cbse-class10-maths-knowledge.json). `from` lists the
  * raw topic names the taggers used that fold into each topic.
  */
+
+/**
+ * Topics believed cut from the rationalised CBSE syllabus and not set on any
+ * 2024-2026 board paper. They are created hidden, so teachers can't pick them
+ * and their questions stay out of papers. An admin can show one again from
+ * Categories. Topics that recent papers still touch (step-deviation, areas of
+ * similar triangles, HCF as a linear combination, water flow) stay visible.
+ */
+export const OUT_OF_SYLLABUS = new Set([
+  'Terminating and non-terminating decimal expansions',
+  "Euclid's division lemma and algorithm",
+  'Division algorithm and evaluation',
+  'Cubic polynomials: zeroes and coefficients',
+  'Equations reducible to a linear pair',
+  'Cross-multiplication method',
+  'Completing the square',
+  'Collinearity and area of a triangle',
+  'Complementary-angle relations',
+  'Constructions',
+  'Conversion and recasting of solids',
+  'Frustum of a cone',
+  'Cumulative frequency and ogives',
+  'Bimodal data',
+]);
+
 export const TOPICS: Record<string, { name: string; from: string[] }[]> = {
   'Real Numbers': [
     { name: 'Irrational numbers and proofs', from: ['irrational numbers proof'] },

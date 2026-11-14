@@ -23,7 +23,7 @@ async function main() {
       data: {
         id: q.id, topicId: topic.id, type: q.type, complexity: q.complexity, marks: q.marks, text: q.text,
         options: q.options ?? undefined, answer: q.answer, markingSteps: q.steps ?? undefined,
-        textbookRef: q.ref, source: 'ai', reviewStatus: 'draft', isActive: false,
+        textbookRef: q.ref || null, source: 'ai', reviewStatus: 'draft', isActive: false,
       },
     });
     added++;

@@ -35,6 +35,7 @@ import { NCERT_CH11 } from './textbook/ncert/ch11.js';
 import { NCERT_CH12 } from './textbook/ncert/ch12.js';
 import { NCERT_CH13 } from './textbook/ncert/ch13.js';
 import { NCERT_CH14 } from './textbook/ncert/ch14.js';
+import { TOPUPS } from './textbook/topups.js';
 
 const CH4 = 'NCERT Class 10 · Ch 4 Quadratic Equations';
 
@@ -176,4 +177,4 @@ export const NCERT_MATCHED: Q[] = [
   ...NCERT_CH01, ...NCERT_CH02, ...NCERT_CH03, ...NCERT_CH04, ...NCERT_CH05, ...NCERT_CH06, ...NCERT_CH07, ...NCERT_CH08, ...NCERT_CH09, ...NCERT_CH10, ...NCERT_CH11, ...NCERT_CH12, ...NCERT_CH13, ...NCERT_CH14,
 ];
 
-export const ALL_TEXTBOOK_QUESTIONS: Q[] = [...TEXTBOOK_QUESTIONS, ...NCERT_MATCHED];
+export const ALL_TEXTBOOK_QUESTIONS: Q[] = [...TEXTBOOK_QUESTIONS, ...NCERT_MATCHED, ...TOPUPS];

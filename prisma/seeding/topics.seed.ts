@@ -8,7 +8,7 @@
 import 'dotenv/config';
 import { readFileSync } from 'node:fs';
 import { databaseClass } from '@bloomneo/appkit/database';
-import { TOPICS } from './curriculum.data.js';
+import { TOPICS, OUT_OF_SYLLABUS } from './curriculum.data.js';
 
 type Raw = { topic: string; askedInPapers: number; sections: Record<string, number>; complexity: Record<string, number> };
 
@@ -47,7 +47,7 @@ async function main() {
       const types = [...new Set(Object.keys(sections).map((s) => TYPE_OF[s]).filter(Boolean))];
       await db.curriculumNode.create({
         data: {
-          kind: 'topic', name: t.name, parentId: chapter.id, position: existing + i,
+          kind: 'topic', name: t.name, parentId: chapter.id, position: existing + i, isActive: !OUT_OF_SYLLABUS.has(t.name),
           questionTypes: types.length ? types : undefined,
           complexity: modal(complexity) ?? undefined,
           marks: marks && Object.keys(marks).length ? Number(modal(marks)) : undefined,
