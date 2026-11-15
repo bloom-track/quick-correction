@@ -190,7 +190,7 @@ export const questionsService = {
     if (f.status === 'active') where.isActive = true;
     if (f.status === 'hidden') where.isActive = false;
     if (f.review && REVIEW.includes(f.review)) where.reviewStatus = f.review;
-    if (f.q?.trim()) where.text = { contains: f.q.trim() };
+    if (f.q?.trim()) where.text = { contains: f.q.trim(), mode: 'insensitive' };
     if (f.pattern) where.patternId = f.pattern;
     // Questions tied to the textbook (textbookRef set); 'mapped' narrows to the
     // ones written one-to-one against a numbered book example or exercise.
