@@ -6,13 +6,11 @@ generator client {
 }
 
 datasource db {
-  // SQLite so `bloom create --auth` works with no database server to install:
-  // `npx prisma db push` creates dev.db in place and you can sign in.
-  //
-  // For Postgres, change this to `postgresql` and point DATABASE_URL at your
-  // server. The schema below uses no provider-specific types, so nothing else
-  // has to change.
-  provider = "sqlite"
+  // PostgreSQL, locally and on bloomneo. Locally DATABASE_URL points at a
+  // Postgres (e.g. Postgres.app: postgresql://<you>@localhost:5432/quick_correction);
+  // on bloomneo it is set by the platform. The old SQLite file prisma/dev.db is
+  // no longer used.
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
@@ -318,8 +316,12 @@ model BoardQuestion {
   confidence     String?
   patternId      String?
   pattern        QuestionPattern? @relation(fields: [patternId], references: [id], onDelete: SetNull)
+  // The subject whose board paper this is (e.g. Class 10 Mathematics (Standard), Class 12 Mathematics),
+  // so each subject's papers are weighted from its own history. Chapter names can repeat across classes.
+  subjectId      String?
 
   @@unique([paperId, qno])
+  @@index([subjectId])
   @@index([patternId])
   @@index([year])
   @@index([chapter])

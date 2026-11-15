@@ -125,7 +125,8 @@ export async function generatePaper(input: { patternId: string; chapterIds?: str
 
   // How often the board asks each chapter in each section, in today's paper format.
   const nameToId = new Map<string, string>(wanted.map((c: any) => [c.name, c.id]));
-  const counts = await db.boardQuestion.groupBy({ by: ['chapter', 'section'], where: { year: { gte: 2023 } }, _count: { _all: true }, _sum: { marks: true } });
+  // Only this subject's papers: chapter names repeat across classes (both have "Probability").
+  const counts = await db.boardQuestion.groupBy({ by: ['chapter', 'section'], where: { year: { gte: 2023 }, subjectId: pattern.subjectId }, _count: { _all: true }, _sum: { marks: true } });
   const weightsFor = (slot: string) => {
     const m = new Map<string, number>(wanted.map((c: any) => [c.id, 0.5])); // every chosen chapter stays possible
     for (const c of counts as { chapter: string; section: string; _count: { _all: number } }[]) {

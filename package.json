@@ -38,6 +38,7 @@
     "db:seed:patterns": "tsx prisma/seeding/patterns.seed.ts",
     "db:seed:textbook": "tsx prisma/seeding/textbook.seed.ts",
     "db:seed:review": "tsx prisma/seeding/review.seed.ts",
+    "db:seed:class12": "tsx prisma/seeding/class12.seed.ts",
     "db:import:ai": "tsx prisma/seeding/ai-questions.import.ts",
     "eval:marking": "tsx scripts/marking-eval.ts"
   },

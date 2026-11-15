@@ -69,6 +69,7 @@ async function main() {
       chapter: r.chapter, topic: r.topic, complexity: r.complexity, competency: !!r.competency, internalChoice: !!r.internalChoice,
       hasFigure: !!r.hasFigure, legacySyllabus: !!r.legacySyllabus, summary: r.summary ?? null, template: r.template ?? null,
       parts: r.parts ?? undefined, confidence: r.confidence ?? null, patternId: r.patternId ?? null,
+      subjectId: subject.id,
     };
     await db.boardQuestion.upsert({ where: { paperId_qno: { paperId, qno } }, create: data, update: data });
     board++;
