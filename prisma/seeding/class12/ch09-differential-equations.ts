@@ -212,12 +212,12 @@ export const CH09_DE: Class12Question[] = [
   },
   {
     id: 'c12-de-c07', chapter: C, topic: 'Linear differential equations', type: 'short', complexity: 'hard', marks: 3,
-    text: 'Find the general solution of the differential equation $(x + 2y^{3})\\frac{dy}{dx} = y$, $y > 0$.',
-    answer: 'Treat $x$ as the dependent variable: $\\frac{dx}{dy} = \\frac{x + 2y^{3}}{y}$, i.e. $\\frac{dx}{dy} - \\frac{1}{y}x = 2y^{2}$, which is linear in $x$ with $P_{1} = -\\frac{1}{y}$, $Q_{1} = 2y^{2}$. Integrating factor $= e^{-\\int \\frac{dy}{y}} = \\frac{1}{y}$. Then $\\frac{d}{dy}\\left(\\frac{x}{y}\\right) = 2y^{2} \\cdot \\frac{1}{y} = 2y$, so $\\frac{x}{y} = y^{2} + C$. The general solution is $x = y^{3} + Cy$.',
+    text: 'Find the general solution of the differential equation $(2x + y^{3})\\frac{dy}{dx} = y$, $y > 0$.',
+    answer: 'Treat $x$ as the dependent variable: $\\frac{dx}{dy} = \\frac{2x + y^{3}}{y}$, i.e. $\\frac{dx}{dy} - \\frac{2}{y}x = y^{2}$, which is linear in $x$ with $P_{1} = -\\frac{2}{y}$, $Q_{1} = y^{2}$. Integrating factor $= e^{-2\\int \\frac{dy}{y}} = \\frac{1}{y^{2}}$. Then $\\frac{d}{dy}\\left(\\frac{x}{y^{2}}\\right) = y^{2} \\cdot \\frac{1}{y^{2}} = 1$, so $\\frac{x}{y^{2}} = y + C$. The general solution is $x = y^{3} + Cy^{2}$.',
     steps: [
-      { step: 'Rewrites as $\\frac{dx}{dy} - \\frac{x}{y} = 2y^{2}$, linear in $x$', marks: 1 },
-      { step: 'Finds the integrating factor $\\frac{1}{y}$', marks: 1 },
-      { step: 'Integrates to $x = y^{3} + Cy$', marks: 1 },
+      { step: 'Rewrites as $\\frac{dx}{dy} - \\frac{2x}{y} = y^{2}$, linear in $x$', marks: 1 },
+      { step: 'Finds the integrating factor $\\frac{1}{y^{2}}$', marks: 1 },
+      { step: 'Integrates to $x = y^{3} + Cy^{2}$', marks: 1 },
     ],
   },
   {

@@ -11,11 +11,12 @@ import {
   Button, Input, FormField, Badge, Alert, AlertDescription, toast, useConfirm,
   Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter,
 } from '@bloomneo/uikit';
-import { ArrowLeft, FlaskConical, UserPlus, Printer, Trash2, Eye, EyeOff, Loader2, AlertTriangle } from 'lucide-react';
+import { ArrowLeft, FlaskConical, UserPlus, FileDown, Trash2, Eye, EyeOff, Loader2, AlertTriangle } from 'lucide-react';
 import { SEO } from '@/shared/SEO';
 import { api } from '@/shared/api';
 import { useLoad, fmtDate, inDays } from '../../lib/useLoad';
 import { PaperSheet } from '../../components/PaperSheet';
+import { ExamPreview } from '../../components/ExamPreview';
 import type { PaperDetail, Student } from '../../lib/types';
 
 const STATUS: Record<string, string> = { assigned: 'Waiting for answers', evaluating: 'Being marked', evaluated: 'Marked', failed: 'Failed' };
@@ -28,6 +29,7 @@ export default function PaperPage() {
   const { data, error, loading, reload } = useLoad(async () => (await api.get<{ paper: PaperDetail }>(`/api/tutor/papers/${id}`)).paper, [id]);
   const [answers, setAnswers] = React.useState(false);
   const [testing, setTesting] = React.useState(false);
+  const [preview, setPreview] = React.useState(false);
 
   const [assigning, setAssigning] = React.useState(false);
   const [students, setStudents] = React.useState<Student[]>([]);
@@ -105,7 +107,7 @@ export default function PaperPage() {
         <div className="flex flex-wrap gap-2">
           <Button onClick={testIt} disabled={testing}>{testing ? <Loader2 className="size-4 animate-spin" /> : <FlaskConical className="size-4" />} Test it</Button>
           <Button variant="outline" onClick={openAssign}><UserPlus className="size-4" /> Set for students</Button>
-          <Button variant="outline" size="icon" aria-label="Print" title="Print" onClick={() => window.print()}><Printer className="size-4" /></Button>
+          <Button variant="outline" onClick={() => setPreview(true)}><FileDown className="size-4" /> PDF</Button>
           <Button variant="ghost" size="icon" aria-label="Delete paper" title="Delete" onClick={remove}><Trash2 className="size-4 text-destructive" /></Button>
         </div>
       </div>
@@ -137,6 +139,14 @@ export default function PaperPage() {
         </Button>
       </div>
       <PaperSheet eyebrow={data.subject ? `Class ${data.className} · ${data.subject}` : undefined} title={data.title} durationMins={data.durationMins} questions={data.questions} layout={data.layout} showAnswers={answers} />
+
+      {preview && (
+        <ExamPreview
+          eyebrow={data.subject ? `Class ${data.className} · ${data.subject}` : undefined}
+          title={data.title} durationMins={data.durationMins} questions={data.questions} layout={data.layout}
+          allowAnswers onClose={() => setPreview(false)}
+        />
+      )}
 
       <Dialog open={assigning} onOpenChange={(o) => !o && setAssigning(false)}>
         <DialogContent className="sm:max-w-md">
