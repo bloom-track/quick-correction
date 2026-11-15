@@ -7,7 +7,7 @@
  */
 import * as React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Button, Input, FormField, Alert, AlertDescription, AlertTitle, toast } from '@bloomneo/uikit';
+import { Button, Input, FormField, Alert, AlertDescription, AlertTitle, Select, SelectContent, SelectItem, SelectTrigger, SelectValue, toast } from '@bloomneo/uikit';
 import { Shuffle, Loader2, AlertTriangle, Check, ArrowLeft } from 'lucide-react';
 import { SEO } from '@/shared/SEO';
 import { api } from '@/shared/api';
@@ -17,7 +17,9 @@ import type { Subject, Preview } from '../../lib/types';
 export default function NewPaperPage() {
   const navigate = useNavigate();
   const setup = useLoad(async () => (await api.get<{ subjects: Subject[] }>('/api/tutor/setup')).subjects);
-  const subject = setup.data?.[0];
+  // Any subject the admin has set up (patterns and chapters); remembered between visits.
+  const [subjectId, setSubjectId] = React.useState(() => { try { return localStorage.getItem('qc.paper.subject') ?? ''; } catch { return ''; } });
+  const subject = setup.data?.find((x) => x.id === subjectId) ?? setup.data?.[0];
 
   const [patternId, setPatternId] = React.useState('');
   const [chapterIds, setChapterIds] = React.useState<string[]>([]);
@@ -29,10 +31,15 @@ export default function NewPaperPage() {
   const [busy, setBusy] = React.useState(false);
   const [saving, setSaving] = React.useState(false);
 
-  // Start with the first pattern and every chapter, as most tests are.
+  // Start with the first pattern and every chapter, as most tests are; again whenever the subject changes.
   React.useEffect(() => {
-    if (subject && !patternId) { setPatternId(subject.patterns[0].id); setChapterIds(subject.chapters.map((c) => c.id)); }
+    if (subject && !subject.patterns.some((p) => p.id === patternId)) { setPatternId(subject.patterns[0].id); setChapterIds(subject.chapters.map((c) => c.id)); }
   }, [subject, patternId]);
+
+  function pickSubject(id: string) {
+    setSubjectId(id);
+    try { localStorage.setItem('qc.paper.subject', id); } catch { /* private mode: not remembered */ }
+  }
 
   const body = React.useMemo(() => ({
     patternId, chapterIds: chapterIds.length === subject?.chapters.length ? [] : chapterIds, variant,
@@ -83,7 +90,17 @@ export default function NewPaperPage() {
       <SEO title="New paper" />
       <Link to="/teacher/papers" className="mb-4 inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground"><ArrowLeft className="size-4" /> Papers</Link>
       <h1 className="mb-1 text-2xl font-semibold">New paper</h1>
-      <p className="mb-6 text-sm text-muted-foreground">{subject.label}</p>
+      {(setup.data?.length ?? 0) > 1 ? (
+        <label className="mb-6 block max-w-sm space-y-1">
+          <span className="text-xs font-medium text-muted-foreground">Subject</span>
+          <Select value={subject.id} onValueChange={pickSubject}>
+            <SelectTrigger className="w-full"><SelectValue /></SelectTrigger>
+            <SelectContent>{setup.data!.map((x) => <SelectItem key={x.id} value={x.id}>{x.label}</SelectItem>)}</SelectContent>
+          </Select>
+        </label>
+      ) : (
+        <p className="mb-6 text-sm text-muted-foreground">{subject.label}</p>
+      )}
 
       <div className="grid gap-8 lg:grid-cols-[1fr_20rem]">
         <div className="space-y-6">

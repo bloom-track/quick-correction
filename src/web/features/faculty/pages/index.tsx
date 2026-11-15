@@ -7,7 +7,7 @@
  * key. Nothing is stored. Shuffle sets another paper from the same bank.
  */
 import * as React from 'react';
-import { Button, Input, FormField, Alert, AlertDescription, AlertTitle, toast } from '@bloomneo/uikit';
+import { Button, Input, FormField, Alert, AlertDescription, AlertTitle, Select, SelectContent, SelectItem, SelectTrigger, SelectValue, toast } from '@bloomneo/uikit';
 import { Shuffle, Loader2, AlertTriangle, Check, Printer } from 'lucide-react';
 import { SEO } from '@/shared/SEO';
 import { api } from '@/shared/api';
@@ -36,7 +36,8 @@ function instructionsFor(p: FacultyPreview): string[] {
 
 export default function FacultyBuilder() {
   const setup = useLoad(async () => api.get<Setup>('/api/faculty/setup'));
-  const subject = setup.data?.subjects[0];
+  const [subjectId, setSubjectId] = React.useState('');
+  const subject = setup.data?.subjects.find((x) => x.id === subjectId) ?? setup.data?.subjects[0];
 
   const [patternId, setPatternId] = React.useState('');
   const [chapterIds, setChapterIds] = React.useState<string[]>([]);
@@ -49,7 +50,7 @@ export default function FacultyBuilder() {
   const [busy, setBusy] = React.useState(false);
 
   React.useEffect(() => {
-    if (subject && !patternId) { setPatternId(subject.patterns[0].id); setChapterIds(subject.chapters.map((c) => c.id)); }
+    if (subject && !subject.patterns.some((p) => p.id === patternId)) { setPatternId(subject.patterns[0].id); setChapterIds(subject.chapters.map((c) => c.id)); }
   }, [subject, patternId]);
 
   React.useEffect(() => {
@@ -91,7 +92,14 @@ export default function FacultyBuilder() {
       <SEO title="Paper builder" />
       <div className="print:hidden">
         <h1 className="mb-1 text-2xl font-semibold">Set a paper</h1>
-        <p className="mb-6 text-sm text-muted-foreground">{subject.label}. Pick a pattern and chapters, review the paper in board format, then download it.</p>
+        <p className="mb-4 text-sm text-muted-foreground">Pick a subject, pattern and chapters, review the paper in board format, then download it.</p>
+        <label className="mb-6 block max-w-sm space-y-1">
+          <span className="text-xs font-medium text-muted-foreground">Subject</span>
+          <Select value={subject.id} onValueChange={setSubjectId}>
+            <SelectTrigger className="w-full"><SelectValue /></SelectTrigger>
+            <SelectContent>{setup.data.subjects.map((x) => <SelectItem key={x.id} value={x.id}>{x.label}</SelectItem>)}</SelectContent>
+          </Select>
+        </label>
 
         <div className="mb-8 grid gap-8 lg:grid-cols-[1fr_20rem]">
           <div className="space-y-6">
@@ -163,7 +171,7 @@ export default function FacultyBuilder() {
 
       {paper && (
         <PaperSheet title={`${paper.pattern}${allChapters ? '' : ` — ${paper.chapterNames.length === 1 ? paper.chapterNames[0] : `${paper.chapterNames.length} chapters`}`}`}
-          eyebrow="Class X · Mathematics (Standard) · Code 041" durationMins={paper.durationMins} questions={paper.questions} layout={paper.layout}
+          eyebrow={subject.label.split(' › ').slice(1).join(' · ')} durationMins={paper.durationMins} questions={paper.questions} layout={paper.layout}
           instructions={instructionsFor(paper)} showAnswers={showAnswers} answersInPrint={showAnswers} />
       )}
     </>

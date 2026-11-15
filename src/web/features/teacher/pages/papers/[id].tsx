@@ -136,7 +136,7 @@ export default function PaperPage() {
           {answers ? <EyeOff className="size-4" /> : <Eye className="size-4" />} {answers ? 'Hide answers' : 'Show answers'}
         </Button>
       </div>
-      <PaperSheet title={data.title} durationMins={data.durationMins} questions={data.questions} layout={data.layout} showAnswers={answers} />
+      <PaperSheet eyebrow={data.subject ? `Class ${data.className} · ${data.subject}` : undefined} title={data.title} durationMins={data.durationMins} questions={data.questions} layout={data.layout} showAnswers={answers} />
 
       <Dialog open={assigning} onOpenChange={(o) => !o && setAssigning(false)}>
         <DialogContent className="sm:max-w-md">

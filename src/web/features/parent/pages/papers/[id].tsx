@@ -135,7 +135,7 @@ export default function ParentPaperPage() {
             <h2 className="font-semibold">The paper</h2>
             <Button variant="outline" size="sm" onClick={() => window.print()}><Printer className="size-4" /> Print</Button>
           </div>
-          <PaperSheet title={data.paper.title} durationMins={data.paper.durationMins} questions={data.questions} layout={data.paper.layout} />
+          <PaperSheet eyebrow={data.paper.subject ? `Class ${data.paper.className} · ${data.paper.subject}` : undefined} title={data.paper.title} durationMins={data.paper.durationMins} questions={data.questions} layout={data.paper.layout} />
         </>
       )}
     </>

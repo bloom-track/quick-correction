@@ -10,6 +10,7 @@ import { databaseClass } from '@bloomneo/appkit/database';
 import { errorClass } from '@bloomneo/appkit/error';
 import { questionsByIds, totalMarks, type LayoutSection } from '../../lib/qc/questions.js';
 import { generatePaper } from '../../lib/qc/generator.js';
+import { subjectInfo } from '../../lib/qc/subjects.js';
 import { queueMarking } from '../../lib/qc/marking.js';
 import { storePage, MAX_PAGES } from '../../lib/qc/pages.js';
 import type { QuestionResult } from '../../lib/qc/marking.js';
@@ -172,10 +173,13 @@ export const tutorService = {
     }
 
     const db = await databaseClass.get();
+    // Record the paper's real subject and class (the columns default to the first subject the app had).
+    const info = await subjectInfo(db, gen.subjectId);
     const paper = await db.paper.create({
       data: {
         teacherId,
         title,
+        ...(info ? { subject: info.subject, className: info.className } : {}),
         pattern: gen.patternName,
         patternId: gen.patternId,
         durationMins: gen.durationMins,

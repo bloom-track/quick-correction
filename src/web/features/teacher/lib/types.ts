@@ -28,6 +28,7 @@ export type Preview = {
 export type SubmissionStatus = 'assigned' | 'evaluating' | 'evaluated' | 'failed';
 export type PaperDetail = {
   id: string; title: string; pattern: string; durationMins: number; createdAt: string;
+  subject: string; className: string;
   layout: LayoutSection[] | null; questions: Question[]; marks: number;
   submissions: { id: string; status: SubmissionStatus; dueDate: string; score: number | null; max: number | null; reviewed: boolean; student: { id: string; name: string } }[];
 };

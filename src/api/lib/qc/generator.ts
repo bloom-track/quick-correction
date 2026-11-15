@@ -86,6 +86,8 @@ function pick(cands: Q[], count: number, slot: string, sectionType: string, weig
 
 export type Generated = {
   patternId: string;
+  /** The subject the pattern belongs to (board › class › subject in the curriculum tree). */
+  subjectId: string;
   patternName: string;
   chapterNames: string[];
   allChapters: boolean;
@@ -110,6 +112,9 @@ export async function generatePaper(input: { patternId: string; chapterIds?: str
 
   const topics = await db.curriculumNode.findMany({ where: { parentId: { in: wanted.map((c: any) => c.id) }, kind: 'topic', isActive: true } });
   const chapterOf = new Map<string, string>(topics.map((t: any) => [t.id, t.parentId]));
+  // A subject whose questions carry question patterns (Class 10) holds back unpatterned ones;
+  // a subject with no patterns at all (Class 12) uses every question normally.
+  const patterned = (await db.question.count({ where: { topicId: { in: topics.map((t: any) => t.id) }, patternId: { not: null } } })) > 0;
   const pool: Q[] = (await db.question.findMany({
     where: {
       topicId: { in: topics.map((t: any) => t.id) },
@@ -120,7 +125,7 @@ export async function generatePaper(input: { patternId: string; chapterIds?: str
   })).map((q: any) => ({
     id: q.id, type: q.type, marks: q.marks, topicId: q.topicId, chapterId: chapterOf.get(q.topicId) ?? '', complexity: q.complexity, hasAnswer: !!q.answer,
     // No pattern, or a topic in doubt with no target: kept out unless nothing else fits.
-    held: !q.pattern || (q.pattern.scope === 'verify' && q.pattern.targetEasy + q.pattern.targetMedium + q.pattern.targetHard === 0),
+    held: q.pattern ? (q.pattern.scope === 'verify' && q.pattern.targetEasy + q.pattern.targetMedium + q.pattern.targetHard === 0) : patterned,
   }));
 
   // How often the board asks each chapter in each section, in today's paper format.
@@ -209,6 +214,7 @@ export async function generatePaper(input: { patternId: string; chapterIds?: str
 
   return {
     patternId: pattern.id,
+    subjectId: pattern.subjectId,
     patternName: pattern.name,
     chapterNames: wanted.map((c: any) => c.name),
     allChapters: wanted.length === all.length,

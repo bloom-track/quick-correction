@@ -7,6 +7,7 @@
  * text. Runs after the route has checked the caller is an admin.
  */
 import { databaseClass } from '@bloomneo/appkit/database';
+import { subjectInfo } from '../../lib/qc/subjects.js';
 import { errorClass } from '@bloomneo/appkit/error';
 import { auditService } from '../audit/audit.service.js';
 
@@ -139,13 +140,18 @@ async function usedQuestionIds(db: any): Promise<Set<string>> {
 
 export const questionsService = {
   /** Chapter > topic > pattern, each with target, have and gap at every difficulty. */
-  async coverage() {
+  async coverage(subjectId?: string) {
     const db = await databaseClass.get();
     const LEVELS = ['easy', 'medium', 'hard'] as const;
-    const patterns = await db.questionPattern.findMany({
-      include: { topic: { select: { id: true, name: true, position: true, parent: { select: { id: true, name: true, position: true } } } } },
+    const all = await db.questionPattern.findMany({
+      include: { topic: { select: { id: true, name: true, position: true, parent: { select: { id: true, name: true, position: true, parentId: true } } } } },
       orderBy: [{ id: 'asc' }],
     });
+    // One subject at a time: chapter and topic names repeat across classes and boards.
+    const subjectIds = [...new Set((all as any[]).map((p) => p.topic.parent.parentId as string))];
+    const subjects = (await Promise.all(subjectIds.map((id) => subjectInfo(db, id)))).filter(Boolean).map((s) => ({ id: s!.id, label: s!.label }));
+    const chosen = subjectId && subjectIds.includes(subjectId) ? subjectId : subjects[0]?.id;
+    const patterns = (all as any[]).filter((p) => p.topic.parent.parentId === chosen);
     const live = await db.question.groupBy({ by: ['patternId', 'complexity'], where: { isActive: true, patternId: { not: null } }, _count: { _all: true } });
     const have = new Map<string, number>();
     for (const r of live as { patternId: string; complexity: string; _count: { _all: number } }[]) have.set(`${r.patternId}|${r.complexity}`, r._count._all);
@@ -169,7 +175,7 @@ export const questionsService = {
     const list = [...chapters.values()].sort((a, b) => a.position - b.position).map((c) => ({ ...c, topics: [...c.topics.values()].sort((a: any, b: any) => a.position - b.position) }));
     const totals = { target: blank(), have: blank(), gap: blank() };
     for (const c of list) { add(totals.target, c.target); add(totals.have, c.have); add(totals.gap, c.gap); }
-    return { chapters: list, totals };
+    return { subjects, subjectId: chosen ?? null, chapters: list, totals };
   },
 
   async list(f: { nodeId?: string; topicId?: string; chapterId?: string; type?: string; complexity?: string; status?: string; review?: string; q?: string; page?: number; asked?: string; pattern?: string; textbook?: string }) {

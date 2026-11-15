@@ -16,6 +16,7 @@ import { queueClass } from '@bloomneo/appkit/queue';
 import { loggerClass } from '@bloomneo/appkit/logger';
 import { questionsByIds, type Question, type LayoutSection } from './questions.js';
 import { aiMarkerEnabled, markWithClaude, MarkerError } from './ai-marker.js';
+import { subjectOfPattern } from './subjects.js';
 
 const logger = loggerClass.get('marking');
 const JOB = 'qc-mark-submission';
@@ -61,8 +62,10 @@ async function runJob({ submissionId }: { submissionId: string }) {
   try {
     const questions = await questionsByIds(sub.paper.questionIds as string[], { layout: sub.paper.layout as LayoutSection[] | null, withAnswers: true });
     // The real marker when an API key is set; otherwise the placeholder, which says so in its summary.
+    // The examiner is told the paper's own board, class and subject.
+    const subject = (await subjectOfPattern(db, sub.paper.patternId))?.label ?? `${sub.paper.subject}, Class ${sub.paper.className}`;
     const out = aiMarkerEnabled()
-      ? await markWithClaude({ questions, pageKeys: sub.pages as string[], paperTitle: sub.paper.title })
+      ? await markWithClaude({ questions, pageKeys: sub.pages as string[], paperTitle: sub.paper.title, subject })
       : await markAnswerPages(questions, sub.pages as string[], sub.id);
     await db.submission.update({
       where: { id: sub.id },

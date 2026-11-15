@@ -40,7 +40,10 @@ const MAX_IMAGE_BYTES = 5 * 1024 * 1024; // the API's limit for one image
 
 export const aiMarkerEnabled = () => Boolean(process.env.ANTHROPIC_API_KEY || process.env.ANTHROPIC_AUTH_TOKEN);
 
-const SYSTEM = `You are an experienced CBSE Class 10 Mathematics examiner marking a student's handwritten answers.
+/** The examiner's instructions, for the paper's own syllabus (e.g. "CBSE › Class 12 › Mathematics"). */
+const systemFor = (subject?: string) => SYSTEM.replace('{SUBJECT}', subject ? subject.replace(/ › /g, ' ') : 'school');
+
+const SYSTEM = `You are an experienced {SUBJECT} examiner marking a student's handwritten answers.
 
 The student's answer pages are photographs, in order, after the questions. Mark each question strictly against the marking scheme given with it.
 
@@ -117,7 +120,7 @@ function checkPage(bytes: Buffer, type: string, label: string): PageImage {
  * by the accuracy check (pages from a folder). Returns the marks and the tokens
  * the call used, so a run can be costed.
  */
-export async function markPages(input: { questions: Question[]; pages: PageImage[]; paperTitle: string; model?: string }): Promise<{ outcome: MarkingOutcome; usage: Usage }> {
+export async function markPages(input: { questions: Question[]; pages: PageImage[]; paperTitle: string; subject?: string; model?: string }): Promise<{ outcome: MarkingOutcome; usage: Usage }> {
   const { questions, pages, paperTitle } = input;
   if (!pages.length) throw new MarkerError('There are no answer pages to mark.');
 
@@ -135,7 +138,7 @@ export async function markPages(input: { questions: Question[]; pages: PageImage
     response = await client.messages.parse({
       model: input.model || MODEL(),
       max_tokens: 16000,
-      system: SYSTEM,
+      system: systemFor(input.subject),
       // Marking is judged work, so think it through; the model's default effort is a notch lower.
       output_config: { effort: 'high', format: zodOutputFormat(Marking) },
       messages: [{ role: 'user', content }],
@@ -156,13 +159,13 @@ export async function markPages(input: { questions: Question[]; pages: PageImage
 }
 
 /** The marking job's entry point: the pages are read from storage by key. */
-export async function markWithClaude(input: { questions: Question[]; pageKeys: string[]; paperTitle: string }): Promise<MarkingOutcome> {
+export async function markWithClaude(input: { questions: Question[]; pageKeys: string[]; paperTitle: string; subject?: string }): Promise<MarkingOutcome> {
   const pages: PageImage[] = [];
   for (const [i, key] of input.pageKeys.entries()) {
     const { data, type } = await readPage(key);
     pages.push(checkPage(Buffer.isBuffer(data) ? data : Buffer.from(data as Uint8Array), type, `Page ${i + 1}`));
   }
-  return (await markPages({ questions: input.questions, pages, paperTitle: input.paperTitle })).outcome;
+  return (await markPages({ questions: input.questions, pages, paperTitle: input.paperTitle, subject: input.subject })).outcome;
 }
 
 export { checkPage };

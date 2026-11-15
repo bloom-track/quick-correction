@@ -15,8 +15,8 @@ const auth = authClass.get();
 router.use(auth.requireLoginToken());
 router.use(auth.requireUserRoles(['admin.system']));
 
-router.get('/coverage', error.asyncRoute(async (_req, res) => {
-  res.json(await questionsService.coverage());
+router.get('/coverage', error.asyncRoute(async (req, res) => {
+  res.json(await questionsService.coverage(typeof req.query.subjectId === 'string' ? req.query.subjectId : undefined));
 }));
 
 router.get('/', error.asyncRoute(async (req, res) => {

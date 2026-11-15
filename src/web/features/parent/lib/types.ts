@@ -16,7 +16,7 @@ export type SubDetail = {
   id: string; status: SubmissionStatus; dueDate: string; submittedAt: string | null;
   pages: string[]; results: QuestionResult[] | null; score: number | null; max: number | null;
   summary: string | null; reviewed: boolean;
-  paper: { id: string; title: string; pattern: string; durationMins: number; layout: LayoutSection[] | null };
+  paper: { id: string; title: string; pattern: string; durationMins: number; subject: string; className: string; layout: LayoutSection[] | null };
   student: { id: string; name: string; className: string };
   questions: Question[];
 };

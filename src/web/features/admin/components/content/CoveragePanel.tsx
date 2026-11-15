@@ -5,7 +5,7 @@
  */
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import { Alert, AlertDescription, Badge } from '@bloomneo/uikit';
+import { Alert, AlertDescription, Badge, Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@bloomneo/uikit';
 import { AlertTriangle, ChevronDown, ChevronRight, Image as ImageIcon } from 'lucide-react';
 import { api } from '@/shared/api';
 import { useLoad } from '@/shared/useLoad';
@@ -17,7 +17,7 @@ type Levels = { easy: number; medium: number; hard: number };
 type Pattern = { id: string; slot: string; pattern: string; sample: string; needsFigure: boolean; seenIn: string[]; target: Levels; have: Levels; gap: Levels };
 type Topic = { id: string; name: string; scope: string; target: Levels; have: Levels; gap: Levels; figures: number; lastAsked: number | null; patterns: Pattern[] };
 type Chapter = { id: string; name: string; target: Levels; have: Levels; gap: Levels; topics: Topic[] };
-type Coverage = { chapters: Chapter[]; totals: { target: Levels; have: Levels; gap: Levels } };
+type Coverage = { subjects: { id: string; label: string }[]; subjectId: string | null; chapters: Chapter[]; totals: { target: Levels; have: Levels; gap: Levels } };
 
 const SLOT: Record<string, string> = { 'A-MCQ': 'MCQ · 1', 'A-AR': 'Assertion-reason · 1', B: 'Short · 2', C: 'Short · 3', D: 'Long · 5', E: 'Case · 4' };
 const sum = (l: Levels) => l.easy + l.medium + l.hard;
@@ -33,7 +33,11 @@ function Bar({ pct }: { pct: number }) {
 }
 
 export function CoveragePanel() {
-  const { data, error, loading } = useLoad(() => api.get<Coverage>('/api/questions/coverage'));
+  const [subjectId, setSubjectId] = React.useState('');
+  const { data, error, loading } = useLoad(
+    () => api.get<Coverage>(`/api/questions/coverage${subjectId ? `?subjectId=${encodeURIComponent(subjectId)}` : ''}`),
+    [subjectId],
+  );
   const [open, setOpen] = React.useState<Set<string>>(new Set());
   const toggle = (id: string) => setOpen((s) => { const n = new Set(s); n.has(id) ? n.delete(id) : n.add(id); return n; });
 
@@ -44,6 +48,16 @@ export function CoveragePanel() {
   return (
     <>
       <PanelTop description="What the bank should hold, what it holds, and what's still needed. Difficulty reads easy / medium / hard." />
+
+      {data.subjects.length > 1 && (
+        <label className="mb-4 block max-w-sm space-y-1">
+          <span className="text-xs font-medium text-muted-foreground">Subject</span>
+          <Select value={data.subjectId ?? ''} onValueChange={setSubjectId}>
+            <SelectTrigger className="w-full"><SelectValue /></SelectTrigger>
+            <SelectContent>{data.subjects.map((x) => <SelectItem key={x.id} value={x.id}>{x.label}</SelectItem>)}</SelectContent>
+          </Select>
+        </label>
+      )}
 
       <section aria-label="Totals" className="mb-5 grid grid-cols-2 gap-3 sm:grid-cols-3">
         <div className="rounded-xl border border-border bg-card p-3"><p className="text-xs text-muted-foreground">Target</p><p className="text-2xl font-semibold tabular-nums">{sum(totals.target)}</p><p className="text-xs text-muted-foreground">{trio(totals.target)}</p></div>
