@@ -52,7 +52,7 @@ export const peopleService = {
     if (filters.kind === 'admin') where.role = 'admin';
     if (filters.status) where.appStatus = filters.status;
     const q = filters.q?.trim();
-    if (q) where.OR = [{ name: { contains: q } }, { email: { contains: q } }];
+    if (q) where.OR = [{ name: { contains: q, mode: 'insensitive' } }, { email: { contains: q, mode: 'insensitive' } }];
 
     const [rows, pending, teachers, parents, faculty, admins, all] = await Promise.all([
       db.user.findMany({ where, select: SELECT, orderBy: [{ createdAt: 'desc' }] }),
