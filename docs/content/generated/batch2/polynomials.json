@@ -1,23 +1,6 @@
 [
  {
   "chapter": "Polynomials",
-  "topic": "Division algorithm and evaluation",
-  "slot": "A-mcq-or-assertion-reason (1 mark)",
-  "type": "mcq",
-  "marks": 1,
-  "complexity": "easy",
-  "competency": false,
-  "text": "The remainder when $p(x) = x^{3} - 2x^{2} + 5x - 7$ is divided by $x - 2$ is",
-  "options": [
-   "$-3$",
-   "$3$",
-   "$-33$",
-   "$7$"
-  ],
-  "answer": "Correct option: B) $3$. By the remainder theorem the remainder is $p(2) = 8 - 8 + 10 - 7 = 3$."
- },
- {
-  "chapter": "Polynomials",
   "topic": "Number and nature of zeroes",
   "slot": "A-mcq-or-assertion-reason (1 mark)",
   "type": "mcq",
@@ -103,28 +86,6 @@
  },
  {
   "chapter": "Polynomials",
-  "topic": "Division algorithm and evaluation",
-  "slot": "B-short (2 marks)",
-  "type": "short",
-  "marks": 2,
-  "complexity": "easy",
-  "competency": false,
-  "text": "Divide $2x^{3} + 3x^{2} - 5x + 4$ by $x^{2} + x - 1$ and write the quotient and the remainder.",
-  "answer": "Divide: $2x^{3} \\div x^{2} = 2x$; subtract $2x(x^{2} + x - 1) = 2x^{3} + 2x^{2} - 2x$ to get $x^{2} - 3x + 4$. Next $x^{2} \\div x^{2} = 1$; subtract $x^{2} + x - 1$ to get $-4x + 5$, whose degree is less than 2. Quotient $= 2x + 1$, remainder $= -4x + 5$."
- },
- {
-  "chapter": "Polynomials",
-  "topic": "Division algorithm and evaluation",
-  "slot": "B-short (2 marks)",
-  "type": "short",
-  "marks": 2,
-  "complexity": "medium",
-  "competency": false,
-  "text": "When a polynomial $p(x)$ is divided by $g(x) = x^{2} - 4x + 3$, the quotient is $2x + 5$ and the remainder is $x - 1$. Find $p(x)$.",
-  "answer": "By the division algorithm $p(x) = g(x)\\,q(x) + r(x)$. $(x^{2} - 4x + 3)(2x + 5) = 2x^{3} - 3x^{2} - 14x + 15$. Adding the remainder: $p(x) = 2x^{3} - 3x^{2} - 14x + 15 + x - 1 = 2x^{3} - 3x^{2} - 13x + 14$."
- },
- {
-  "chapter": "Polynomials",
   "topic": "Value of k from a zero",
   "slot": "B-short (2 marks)",
   "type": "short",
@@ -188,28 +149,6 @@
   "competency": false,
   "text": "If $\\alpha$ and $\\beta$ are the zeroes of $2x^{2} - 7x + 3$ with $\\alpha > \\beta$, find $\\alpha - \\beta$ using the relations between the zeroes and the coefficients.",
   "answer": "$\\alpha + \\beta = \\frac{7}{2}$, $\\alpha\\beta = \\frac{3}{2}$. $(\\alpha - \\beta)^{2} = \\left(\\frac{7}{2}\\right)^{2} - 4 \\times \\frac{3}{2} = \\frac{49}{4} - 6 = \\frac{25}{4}$. Since $\\alpha > \\beta$, $\\alpha - \\beta = \\frac{5}{2}$. (Check: zeroes are $3$ and $\\frac{1}{2}$.)"
- },
- {
-  "chapter": "Polynomials",
-  "topic": "Division algorithm and evaluation",
-  "slot": "C-short (3 marks)",
-  "type": "short",
-  "marks": 3,
-  "complexity": "easy",
-  "competency": false,
-  "text": "Divide $p(x) = 4x^{3} - 5x^{2} + 7x - 9$ by $g(x) = x^{2} - x + 2$ and verify the division algorithm.",
-  "answer": "$4x^{3} \\div x^{2} = 4x$; subtract $4x^{3} - 4x^{2} + 8x$ to get $-x^{2} - x - 9$. Then $-x^{2} \\div x^{2} = -1$; subtract $-x^{2} + x - 2$ to get $-2x - 7$. Quotient $q(x) = 4x - 1$, remainder $r(x) = -2x - 7$. Verify: $g(x)q(x) + r(x) = (x^{2} - x + 2)(4x - 1) - 2x - 7 = 4x^{3} - 5x^{2} + 9x - 2 - 2x - 7 = 4x^{3} - 5x^{2} + 7x - 9 = p(x)$."
- },
- {
-  "chapter": "Polynomials",
-  "topic": "Division algorithm and evaluation",
-  "slot": "C-short (3 marks)",
-  "type": "short",
-  "marks": 3,
-  "complexity": "medium",
-  "competency": false,
-  "text": "Show that $x^{2} + 1$ is a factor of $p(x) = x^{4} + x^{3} + 3x^{2} + x + 2$. Hence find the number of real zeroes of $p(x)$.",
-  "answer": "Dividing: $x^{4} \\div x^{2} = x^{2}$, subtract $x^{4} + x^{2}$ to get $x^{3} + 2x^{2} + x + 2$; then $x^{3} \\div x^{2} = x$, subtract $x^{3} + x$ to get $2x^{2} + 2$; then $2$, subtract $2x^{2} + 2$ to get remainder $0$. So $p(x) = (x^{2} + 1)(x^{2} + x + 2)$ and $x^{2} + 1$ is a factor. $x^{2} + 1 > 0$ for all real $x$, and $x^{2} + x + 2$ has $b^{2} - 4ac = 1 - 8 = -7 < 0$. So neither factor vanishes: $p(x)$ has no real zero (number of real zeroes $= 0$)."
  },
  {
   "chapter": "Polynomials",
@@ -279,17 +218,6 @@
  },
  {
   "chapter": "Polynomials",
-  "topic": "Division algorithm and evaluation",
-  "slot": "D-long (5 marks)",
-  "type": "long",
-  "marks": 5,
-  "complexity": "medium",
-  "competency": false,
-  "text": "Divide $p(x) = 6x^{4} + x^{3} - x^{2} + 15x - 5$ by $g(x) = 2x^{2} - x + 3$.\n(i) Find the quotient $q(x)$ and the remainder $r(x)$.\n(ii) Verify the division algorithm.\n(iii) Write the degree of $r(x)$ and compare it with the degree of $g(x)$.",
-  "answer": "(i) $6x^{4} \\div 2x^{2} = 3x^{2}$; subtract $6x^{4} - 3x^{3} + 9x^{2}$ to get $4x^{3} - 10x^{2} + 15x - 5$. Then $4x^{3} \\div 2x^{2} = 2x$; subtract $4x^{3} - 2x^{2} + 6x$ to get $-8x^{2} + 9x - 5$. Then $-8x^{2} \\div 2x^{2} = -4$; subtract $-8x^{2} + 4x - 12$ to get $5x + 7$. So $q(x) = 3x^{2} + 2x - 4$ and $r(x) = 5x + 7$. (ii) $g(x)q(x) + r(x) = (2x^{2} - x + 3)(3x^{2} + 2x - 4) + 5x + 7 = 6x^{4} + x^{3} - x^{2} + 10x - 12 + 5x + 7 = 6x^{4} + x^{3} - x^{2} + 15x - 5 = p(x)$. (iii) $\\deg r = 1 < 2 = \\deg g$, as the algorithm requires."
- },
- {
-  "chapter": "Polynomials",
   "topic": "Zeroes and coefficients",
   "slot": "D-long (5 marks)",
   "type": "long",
@@ -309,17 +237,6 @@
   "competency": true,
   "text": "The zeroes of the cubic polynomial $p(x) = x^{3} - 3x^{2} - 6x + 8$ are in arithmetic progression.\n(i) Write the zeroes as $a - d$, $a$, $a + d$ and use the sum of the zeroes to find $a$.\n(ii) Use the product of the zeroes to find $d$.\n(iii) Write the three zeroes and verify the sum of the products of the zeroes taken two at a time.",
   "answer": "(i) Sum of zeroes $= (a - d) + a + (a + d) = 3a = -\\frac{-3}{1} = 3$, so $a = 1$. (ii) Product $= (a - d)\\,a\\,(a + d) = a(a^{2} - d^{2}) = 1 - d^{2}$, which equals $-\\frac{8}{1} = -8$. So $d^{2} = 9$ and $d = \\pm 3$. (iii) Taking $d = 3$ the zeroes are $-2$, $1$, $4$. Sum of products in pairs $= (-2)(1) + (1)(4) + (4)(-2) = -2 + 4 - 8 = -6 = \\frac{c}{a} = \\frac{-6}{1}$. Verified. (Also $p(1) = 1 - 3 - 6 + 8 = 0$.)"
- },
- {
-  "chapter": "Polynomials",
-  "topic": "Division algorithm and evaluation",
-  "slot": "D-long (5 marks)",
-  "type": "long",
-  "marks": 5,
-  "complexity": "hard",
-  "competency": false,
-  "text": "The polynomial $x^{2} - x - 6$ is a factor of $p(x) = x^{4} - 2x^{3} + ax^{2} + bx - 60$.\n(i) Find $a$ and $b$.\n(ii) Find the quotient on dividing $p(x)$ by $x^{2} - x - 6$.\n(iii) Find all real zeroes of $p(x)$.",
-  "answer": "(i) $x^{2} - x - 6 = (x - 3)(x + 2)$, so $p(3) = 0$ and $p(-2) = 0$. $p(3) = 81 - 54 + 9a + 3b - 60 = 0$ gives $3a + b = 11$. $p(-2) = 16 + 16 + 4a - 2b - 60 = 0$ gives $2a - b = 14$. Adding: $5a = 25$, so $a = 5$ and $b = -4$. (ii) Dividing $x^{4} - 2x^{3} + 5x^{2} - 4x - 60$ by $x^{2} - x - 6$: first term $x^{2}$ leaves $-x^{3} + 11x^{2} - 4x - 60$; next $-x$ leaves $10x^{2} - 10x - 60$; next $10$ leaves $0$. Quotient $= x^{2} - x + 10$. (iii) For the quotient $b^{2} - 4ac = 1 - 40 < 0$, so it gives no real zero. The real zeroes of $p(x)$ are only $3$ and $-2$."
  },
  {
   "chapter": "Polynomials",

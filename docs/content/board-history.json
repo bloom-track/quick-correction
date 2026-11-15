@@ -47,7 +47,7 @@
 "paperId": "2022-main-std-30-1-1",
 "legacySyllabus": true,
 "key": "2022-main-std-30-1-1|2",
-"patternId": "SV-CO-03"
+"patternId": null
 },
 {
 "year": 2022,
@@ -199,7 +199,7 @@
 "paperId": "2022-main-std-30-1-1",
 "legacySyllabus": true,
 "key": "2022-main-std-30-1-1|8",
-"patternId": "CI-CN-01"
+"patternId": null
 },
 {
 "year": 2022,
@@ -448,7 +448,7 @@
 "paperId": "2022-main-std-30-2-1",
 "legacySyllabus": true,
 "key": "2022-main-std-30-2-1|3",
-"patternId": "SV-CO-03"
+"patternId": null
 },
 {
 "year": 2022,
@@ -548,7 +548,7 @@
 "paperId": "2022-main-std-30-2-1",
 "legacySyllabus": true,
 "key": "2022-main-std-30-2-1|7",
-"patternId": "CI-CN-02"
+"patternId": null
 },
 {
 "year": 2022,
@@ -926,7 +926,7 @@
 "paperId": "2022-main-std-30-3-1",
 "legacySyllabus": true,
 "key": "2022-main-std-30-3-1|7",
-"patternId": "CI-NEW-01"
+"patternId": null
 },
 {
 "year": 2022,
@@ -1302,7 +1302,7 @@
 "paperId": "2022-main-std-30-4-1",
 "legacySyllabus": true,
 "key": "2022-main-std-30-4-1|7",
-"patternId": "CI-CN-03"
+"patternId": null
 },
 {
 "year": 2022,
@@ -2876,7 +2876,7 @@
 "paperId": "2023-main-std-30-2-1",
 "legacySyllabus": false,
 "key": "2023-main-std-30-2-1|17",
-"patternId": "AT-MCQ-01"
+"patternId": null
 },
 {
 "year": 2023,
@@ -22509,7 +22509,7 @@
 "confidence": "high",
 "paper": "2011/30_1_1.json",
 "key": "2011-main-std-30-1-1|14",
-"patternId": "CI-NEW-01"
+"patternId": null
 },
 {
 "year": 2011,
@@ -22703,7 +22703,7 @@
 "confidence": "medium",
 "paper": "2011/30_1_1.json",
 "key": "2011-main-std-30-1-1|22",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2011,
@@ -22751,7 +22751,7 @@
 "confidence": "high",
 "paper": "2011/30_1_1.json",
 "key": "2011-main-std-30-1-1|24",
-"patternId": "SV-FR-02"
+"patternId": null
 },
 {
 "year": 2011,
@@ -23479,7 +23479,7 @@
 "confidence": "high",
 "paper": "2012/retyped_2012.json",
 "key": "2012-main-std-unknown|20",
-"patternId": "CG-NEW-01"
+"patternId": null
 },
 {
 "year": 2012,
@@ -23623,7 +23623,7 @@
 "confidence": "medium",
 "paper": "2012/retyped_2012.json",
 "key": "2012-main-std-unknown|26",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2012,
@@ -23695,7 +23695,7 @@
 "confidence": "high",
 "paper": "2012/retyped_2012.json",
 "key": "2012-main-std-unknown|29",
-"patternId": "SV-FR-02"
+"patternId": null
 },
 {
 "year": 2012,
@@ -23983,7 +23983,7 @@
 "confidence": "medium",
 "paper": "2013/30_1_1.json",
 "key": "2013-main-std-30-1-1|7",
-"patternId": "AT-B-01"
+"patternId": null
 },
 {
 "year": 2013,
@@ -24225,7 +24225,7 @@
 "confidence": "medium",
 "paper": "2013/30_1_1.json",
 "key": "2013-main-std-30-1-1|17",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2013,
@@ -24585,7 +24585,7 @@
 "confidence": "high",
 "paper": "2013/30_1_1.json",
 "key": "2013-main-std-30-1-1|32",
-"patternId": "AT-C-01"
+"patternId": null
 },
 {
 "year": 2013,
@@ -24633,7 +24633,7 @@
 "confidence": "high",
 "paper": "2013/30_1_1.json",
 "key": "2013-main-std-30-1-1|34",
-"patternId": "SV-FR-03"
+"patternId": null
 },
 {
 "year": 2014,
@@ -24801,7 +24801,7 @@
 "confidence": "high",
 "paper": "2014/retyped_2014.json",
 "key": "2014-main-std-unknown|7",
-"patternId": "AT-B-01"
+"patternId": null
 },
 {
 "year": 2014,
@@ -24825,7 +24825,7 @@
 "confidence": "high",
 "paper": "2014/retyped_2014.json",
 "key": "2014-main-std-unknown|8",
-"patternId": "SV-CO-03"
+"patternId": null
 },
 {
 "year": 2014,
@@ -25043,7 +25043,7 @@
 "confidence": "high",
 "paper": "2014/retyped_2014.json",
 "key": "2014-main-std-unknown|17",
-"patternId": "CI-CN-01"
+"patternId": null
 },
 {
 "year": 2014,
@@ -25115,7 +25115,7 @@
 "confidence": "high",
 "paper": "2014/retyped_2014.json",
 "key": "2014-main-std-unknown|20",
-"patternId": "AT-B-01"
+"patternId": null
 },
 {
 "year": 2014,
@@ -25215,7 +25215,7 @@
 "confidence": "medium",
 "paper": "2014/retyped_2014.json",
 "key": "2014-main-std-unknown|24",
-"patternId": "SV-CO-05"
+"patternId": null
 },
 {
 "year": 2014,
@@ -25723,7 +25723,7 @@
 "confidence": "high",
 "paper": "2015/30_1_1.json",
 "key": "2015-main-std-30-1-1|11",
-"patternId": "AT-C-01"
+"patternId": null
 },
 {
 "year": 2015,
@@ -25867,7 +25867,7 @@
 "confidence": "high",
 "paper": "2015/30_1_1.json",
 "key": "2015-main-std-30-1-1|17",
-"patternId": "SV-FR-01"
+"patternId": null
 },
 {
 "year": 2015,
@@ -26083,7 +26083,7 @@
 "confidence": "medium",
 "paper": "2015/30_1_1.json",
 "key": "2015-main-std-30-1-1|26",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2015,
@@ -26155,7 +26155,7 @@
 "confidence": "medium",
 "paper": "2015/30_1_1.json",
 "key": "2015-main-std-30-1-1|29",
-"patternId": "AT-C-01"
+"patternId": null
 },
 {
 "year": 2015,
@@ -26179,7 +26179,7 @@
 "confidence": "high",
 "paper": "2015/30_1_1.json",
 "key": "2015-main-std-30-1-1|30",
-"patternId": "SV-CO-07"
+"patternId": null
 },
 {
 "year": 2015,
@@ -26449,7 +26449,7 @@
 "confidence": "high",
 "paper": "2015/30_1_RLH.json",
 "key": "2015-main-std-30-1|10",
-"patternId": "AT-B-01"
+"patternId": null
 },
 {
 "year": 2015,
@@ -26641,7 +26641,7 @@
 "confidence": "high",
 "paper": "2015/30_1_RLH.json",
 "key": "2015-main-std-30-1|18",
-"patternId": "SV-CO-07"
+"patternId": null
 },
 {
 "year": 2015,
@@ -26689,7 +26689,7 @@
 "confidence": "high",
 "paper": "2015/30_1_RLH.json",
 "key": "2015-main-std-30-1|20",
-"patternId": "SV-CO-05"
+"patternId": null
 },
 {
 "year": 2015,
@@ -26835,7 +26835,7 @@
 "confidence": "high",
 "paper": "2015/30_1_RLH.json",
 "key": "2015-main-std-30-1|26",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2015,
@@ -26907,7 +26907,7 @@
 "confidence": "high",
 "paper": "2015/30_1_RLH.json",
 "key": "2015-main-std-30-1|29",
-"patternId": "CG-NEW-01"
+"patternId": null
 },
 {
 "year": 2015,
@@ -26955,7 +26955,7 @@
 "confidence": "high",
 "paper": "2015/30_1_RLH.json",
 "key": "2015-main-std-30-1|31",
-"patternId": "SV-CO-05"
+"patternId": null
 },
 {
 "year": 2016,
@@ -27369,7 +27369,7 @@
 "paper": "2016/030_Set1.json",
 "paperId": "2016-main-std-30-1",
 "key": "2016-main-std-30-1|17",
-"patternId": "SV-CO-07"
+"patternId": null
 },
 {
 "year": 2016,
@@ -27393,7 +27393,7 @@
 "paper": "2016/030_Set1.json",
 "paperId": "2016-main-std-30-1",
 "key": "2016-main-std-30-1|18",
-"patternId": "SV-CO-08"
+"patternId": null
 },
 {
 "year": 2016,
@@ -27515,7 +27515,7 @@
 "paper": "2016/030_Set1.json",
 "paperId": "2016-main-std-30-1",
 "key": "2016-main-std-30-1|23",
-"patternId": "CI-CN-03"
+"patternId": null
 },
 {
 "year": 2016,
@@ -27639,7 +27639,7 @@
 "paper": "2016/030_Set1.json",
 "paperId": "2016-main-std-30-1",
 "key": "2016-main-std-30-1|28",
-"patternId": "AT-D-01"
+"patternId": null
 },
 {
 "year": 2016,
@@ -28025,7 +28025,7 @@
 "confidence": "high",
 "paper": "2016/30_1_1.json",
 "key": "2016-main-std-30-1-1|13",
-"patternId": "AT-C-01"
+"patternId": null
 },
 {
 "year": 2016,
@@ -28121,7 +28121,7 @@
 "confidence": "high",
 "paper": "2016/30_1_1.json",
 "key": "2016-main-std-30-1-1|17",
-"patternId": "SV-CO-07"
+"patternId": null
 },
 {
 "year": 2016,
@@ -28267,7 +28267,7 @@
 "confidence": "high",
 "paper": "2016/30_1_1.json",
 "key": "2016-main-std-30-1-1|23",
-"patternId": "CI-CN-02"
+"patternId": null
 },
 {
 "year": 2016,
@@ -28391,7 +28391,7 @@
 "confidence": "high",
 "paper": "2016/30_1_1.json",
 "key": "2016-main-std-30-1-1|28",
-"patternId": "AT-B-01"
+"patternId": null
 },
 {
 "year": 2016,
@@ -28466,7 +28466,7 @@
 "confidence": "high",
 "paper": "2016/30_1_1.json",
 "key": "2016-main-std-30-1-1|31",
-"patternId": "SV-FR-02"
+"patternId": null
 },
 {
 "year": 2017,
@@ -28828,7 +28828,7 @@
 "confidence": "high",
 "paper": "2017-COMPTT/30_1.json",
 "key": "2017-compartment-std-30-1|15",
-"patternId": "AT-C-01"
+"patternId": null
 },
 {
 "year": 2017,
@@ -29070,7 +29070,7 @@
 "confidence": "high",
 "paper": "2017-COMPTT/30_1.json",
 "key": "2017-compartment-std-30-1|25",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2017,
@@ -29168,7 +29168,7 @@
 "confidence": "high",
 "paper": "2017-COMPTT/30_1.json",
 "key": "2017-compartment-std-30-1|29",
-"patternId": "AT-B-01"
+"patternId": null
 },
 {
 "year": 2017,
@@ -29192,7 +29192,7 @@
 "confidence": "high",
 "paper": "2017-COMPTT/30_1.json",
 "key": "2017-compartment-std-30-1|30",
-"patternId": "SV-CO-03"
+"patternId": null
 },
 {
 "year": 2017,
@@ -29216,7 +29216,7 @@
 "confidence": "high",
 "paper": "2017-COMPTT/30_1.json",
 "key": "2017-compartment-std-30-1|31",
-"patternId": "SV-FR-03"
+"patternId": null
 },
 {
 "year": 2017,
@@ -29432,7 +29432,7 @@
 "confidence": "high",
 "paper": "2017/30_1_1_HRK1.json",
 "key": "2017-main-std-30-1-1|9",
-"patternId": "CI-NEW-01"
+"patternId": null
 },
 {
 "year": 2017,
@@ -29552,7 +29552,7 @@
 "confidence": "medium",
 "paper": "2017/30_1_1_HRK1.json",
 "key": "2017-main-std-30-1-1|14",
-"patternId": "SV-CO-07"
+"patternId": null
 },
 {
 "year": 2017,
@@ -29650,7 +29650,7 @@
 "confidence": "medium",
 "paper": "2017/30_1_1_HRK1.json",
 "key": "2017-main-std-30-1-1|18",
-"patternId": "CG-NEW-01"
+"patternId": null
 },
 {
 "year": 2017,
@@ -29724,7 +29724,7 @@
 "confidence": "high",
 "paper": "2017/30_1_1_HRK1.json",
 "key": "2017-main-std-30-1-1|21",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2017,
@@ -29844,7 +29844,7 @@
 "confidence": "high",
 "paper": "2017/30_1_1_HRK1.json",
 "key": "2017-main-std-30-1-1|26",
-"patternId": "SV-NEW-01"
+"patternId": null
 },
 {
 "year": 2017,
@@ -29964,7 +29964,7 @@
 "confidence": "high",
 "paper": "2017/30_1_1_HRK1.json",
 "key": "2017-main-std-30-1-1|31",
-"patternId": "SV-CO-07"
+"patternId": null
 },
 {
 "year": 2017,
@@ -30422,7 +30422,7 @@
 "confidence": "high",
 "paper": "2017/30_1_HRK.json",
 "key": "2017-main-std-30-1|19",
-"patternId": "SV-FR-01"
+"patternId": null
 },
 {
 "year": 2017,
@@ -30446,7 +30446,7 @@
 "confidence": "high",
 "paper": "2017/30_1_HRK.json",
 "key": "2017-main-std-30-1|20",
-"patternId": "SV-CO-05"
+"patternId": null
 },
 {
 "year": 2017,
@@ -30592,7 +30592,7 @@
 "confidence": "high",
 "paper": "2017/30_1_HRK.json",
 "key": "2017-main-std-30-1|26",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2017,
@@ -30712,7 +30712,7 @@
 "confidence": "high",
 "paper": "2017/30_1_HRK.json",
 "key": "2017-main-std-30-1|31",
-"patternId": "SV-CO-07"
+"patternId": null
 },
 {
 "year": 2018,
@@ -30978,7 +30978,7 @@
 "confidence": "medium",
 "paper": "2018-COMPTT/30_1.json",
 "key": "2018-compartment-std-30-1|11",
-"patternId": "TG-CA-02"
+"patternId": null
 },
 {
 "year": 2018,
@@ -31026,7 +31026,7 @@
 "confidence": "high",
 "paper": "2018-COMPTT/30_1.json",
 "key": "2018-compartment-std-30-1|13",
-"patternId": "RN-EUC-02"
+"patternId": null
 },
 {
 "year": 2018,
@@ -31150,7 +31150,7 @@
 "confidence": "high",
 "paper": "2018-COMPTT/30_1.json",
 "key": "2018-compartment-std-30-1|18",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2018,
@@ -31246,7 +31246,7 @@
 "confidence": "high",
 "paper": "2018-COMPTT/30_1.json",
 "key": "2018-compartment-std-30-1|22",
-"patternId": "ST-OGV-01"
+"patternId": null
 },
 {
 "year": 2018,
@@ -31294,7 +31294,7 @@
 "confidence": "high",
 "paper": "2018-COMPTT/30_1.json",
 "key": "2018-compartment-std-30-1|24",
-"patternId": "PO-DV-08"
+"patternId": null
 },
 {
 "year": 2018,
@@ -31390,7 +31390,7 @@
 "confidence": "high",
 "paper": "2018-COMPTT/30_1.json",
 "key": "2018-compartment-std-30-1|28",
-"patternId": "SV-FR-03"
+"patternId": null
 },
 {
 "year": 2018,
@@ -31558,7 +31558,7 @@
 "paper": "2018/30_1_Set1.json",
 "paperId": "2018-main-std-30-1",
 "key": "2018-main-std-30-1|5",
-"patternId": "TG-CA-01"
+"patternId": null
 },
 {
 "year": 2018,
@@ -31774,7 +31774,7 @@
 "paper": "2018/30_1_Set1.json",
 "paperId": "2018-main-std-30-1",
 "key": "2018-main-std-30-1|14",
-"patternId": "PO-DV-07"
+"patternId": null
 },
 {
 "year": 2018,
@@ -32064,7 +32064,7 @@
 "paper": "2018/30_1_Set1.json",
 "paperId": "2018-main-std-30-1",
 "key": "2018-main-std-30-1|26",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2018,
@@ -32112,7 +32112,7 @@
 "paper": "2018/30_1_Set1.json",
 "paperId": "2018-main-std-30-1",
 "key": "2018-main-std-30-1|28",
-"patternId": "SV-FR-01"
+"patternId": null
 },
 {
 "year": 2018,
@@ -32208,7 +32208,7 @@
 "confidence": "high",
 "paper": "2019-COMPTT/30_1_1.json",
 "key": "2019-compartment-std-30-1-1|2",
-"patternId": "TG-CA-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -32568,7 +32568,7 @@
 "confidence": "high",
 "paper": "2019-COMPTT/30_1_1.json",
 "key": "2019-compartment-std-30-1-1|17",
-"patternId": "PO-DV-07"
+"patternId": null
 },
 {
 "year": 2019,
@@ -32616,7 +32616,7 @@
 "confidence": "high",
 "paper": "2019-COMPTT/30_1_1.json",
 "key": "2019-compartment-std-30-1-1|19",
-"patternId": "RN-EUC-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -32812,7 +32812,7 @@
 "confidence": "high",
 "paper": "2019-COMPTT/30_1_1.json",
 "key": "2019-compartment-std-30-1-1|27",
-"patternId": "CI-CN-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -32884,7 +32884,7 @@
 "confidence": "high",
 "paper": "2019-COMPTT/30_1_1.json",
 "key": "2019-compartment-std-30-1-1|30",
-"patternId": "SV-FR-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -32958,7 +32958,7 @@
 "paper": "2019/30_1_1.json",
 "paperId": "2019-main-std-30-1-1",
 "key": "2019-main-std-30-1-1|3",
-"patternId": "TG-CA-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -33054,7 +33054,7 @@
 "paper": "2019/30_1_1.json",
 "paperId": "2019-main-std-30-1-1",
 "key": "2019-main-std-30-1-1|7",
-"patternId": "RN-EUC-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -33540,7 +33540,7 @@
 "paper": "2019/30_1_1.json",
 "paperId": "2019-main-std-30-1-1",
 "key": "2019-main-std-30-1-1|27",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -33564,7 +33564,7 @@
 "paper": "2019/30_1_1.json",
 "paperId": "2019-main-std-30-1-1",
 "key": "2019-main-std-30-1-1|28",
-"patternId": "SV-FR-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -33804,7 +33804,7 @@
 "paper": "2019/30_2_1.json",
 "paperId": "2019-main-std-30-2-1",
 "key": "2019-main-std-30-2-1|8",
-"patternId": "AT-B-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -34022,7 +34022,7 @@
 "paper": "2019/30_2_1.json",
 "paperId": "2019-main-std-30-2-1",
 "key": "2019-main-std-30-2-1|17",
-"patternId": "TG-CA-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -34118,7 +34118,7 @@
 "paper": "2019/30_2_1.json",
 "paperId": "2019-main-std-30-2-1",
 "key": "2019-main-std-30-2-1|21",
-"patternId": "PO-DV-06"
+"patternId": null
 },
 {
 "year": 2019,
@@ -34240,7 +34240,7 @@
 "paper": "2019/30_2_1.json",
 "paperId": "2019-main-std-30-2-1",
 "key": "2019-main-std-30-2-1|26",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -34264,7 +34264,7 @@
 "paper": "2019/30_2_1.json",
 "paperId": "2019-main-std-30-2-1",
 "key": "2019-main-std-30-2-1|27",
-"patternId": "ST-OGV-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -34386,7 +34386,7 @@
 "paper": "2019/30_3_1.json",
 "paperId": "2019-main-std-30-3-1",
 "key": "2019-main-std-30-3-1|2",
-"patternId": "RN-DEC-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -34606,7 +34606,7 @@
 "paper": "2019/30_3_1.json",
 "paperId": "2019-main-std-30-3-1",
 "key": "2019-main-std-30-3-1|11",
-"patternId": "QE-CSQ-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -34678,7 +34678,7 @@
 "paper": "2019/30_3_1.json",
 "paperId": "2019-main-std-30-3-1",
 "key": "2019-main-std-30-3-1|14",
-"patternId": "PO-DV-05"
+"patternId": null
 },
 {
 "year": 2019,
@@ -34702,7 +34702,7 @@
 "paper": "2019/30_3_1.json",
 "paperId": "2019-main-std-30-3-1",
 "key": "2019-main-std-30-3-1|15",
-"patternId": "AT-C-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -34774,7 +34774,7 @@
 "paper": "2019/30_3_1.json",
 "paperId": "2019-main-std-30-3-1",
 "key": "2019-main-std-30-3-1|18",
-"patternId": "TG-CA-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -34949,7 +34949,7 @@
 "paper": "2019/30_3_1.json",
 "paperId": "2019-main-std-30-3-1",
 "key": "2019-main-std-30-3-1|25",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -35047,7 +35047,7 @@
 "paper": "2019/30_3_1.json",
 "paperId": "2019-main-std-30-3-1",
 "key": "2019-main-std-30-3-1|29",
-"patternId": "ST-OGV-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -35191,7 +35191,7 @@
 "paper": "2019/30_4_2.json",
 "paperId": "2019-main-std-30-4-2",
 "key": "2019-main-std-30-4-2|5",
-"patternId": "TG-CA-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -35287,7 +35287,7 @@
 "paper": "2019/30_4_2.json",
 "paperId": "2019-main-std-30-4-2",
 "key": "2019-main-std-30-4-2|9",
-"patternId": "LE-RD-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -35335,7 +35335,7 @@
 "paper": "2019/30_4_2.json",
 "paperId": "2019-main-std-30-4-2",
 "key": "2019-main-std-30-4-2|11",
-"patternId": "RN-EUC-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -35529,7 +35529,7 @@
 "paper": "2019/30_4_2.json",
 "paperId": "2019-main-std-30-4-2",
 "key": "2019-main-std-30-4-2|19",
-"patternId": "SV-CO-05"
+"patternId": null
 },
 {
 "year": 2019,
@@ -35747,7 +35747,7 @@
 "paper": "2019/30_4_2.json",
 "paperId": "2019-main-std-30-4-2",
 "key": "2019-main-std-30-4-2|28",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -35795,7 +35795,7 @@
 "paper": "2019/30_4_2.json",
 "paperId": "2019-main-std-30-4-2",
 "key": "2019-main-std-30-4-2|30",
-"patternId": "SV-FR-03"
+"patternId": null
 },
 {
 "year": 2019,
@@ -36133,7 +36133,7 @@
 "paper": "2019/30_5_1.json",
 "paperId": "2019-main-std-30-5-1",
 "key": "2019-main-std-30-5-1|14",
-"patternId": "PO-DV-07"
+"patternId": null
 },
 {
 "year": 2019,
@@ -36423,7 +36423,7 @@
 "paper": "2019/30_5_1.json",
 "paperId": "2019-main-std-30-5-1",
 "key": "2019-main-std-30-5-1|26",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -36519,7 +36519,7 @@
 "paper": "2019/30_5_1.json",
 "paperId": "2019-main-std-30-5-1",
 "key": "2019-main-std-30-5-1|30",
-"patternId": "SV-FR-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -36857,7 +36857,7 @@
 "confidence": "high",
 "paper": "2020/30_1_1.json",
 "key": "2020-main-std-30-1-1|14",
-"patternId": "TG-CA-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -37247,7 +37247,7 @@
 "confidence": "high",
 "paper": "2020/30_1_1.json",
 "key": "2020-main-std-30-1-1|30",
-"patternId": "AT-B-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -37343,7 +37343,7 @@
 "confidence": "high",
 "paper": "2020/30_1_1.json",
 "key": "2020-main-std-30-1-1|34",
-"patternId": "SV-NEW-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -37367,7 +37367,7 @@
 "confidence": "high",
 "paper": "2020/30_1_1.json",
 "key": "2020-main-std-30-1-1|35",
-"patternId": "RN-NEW-04"
+"patternId": null
 },
 {
 "year": 2020,
@@ -37415,7 +37415,7 @@
 "confidence": "high",
 "paper": "2020/30_1_1.json",
 "key": "2020-main-std-30-1-1|37",
-"patternId": "CI-CN-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -37463,7 +37463,7 @@
 "confidence": "high",
 "paper": "2020/30_1_1.json",
 "key": "2020-main-std-30-1-1|39",
-"patternId": "SV-FR-03"
+"patternId": null
 },
 {
 "year": 2020,
@@ -37487,7 +37487,7 @@
 "confidence": "high",
 "paper": "2020/30_1_1.json",
 "key": "2020-main-std-30-1-1|40",
-"patternId": "ST-OGV-02"
+"patternId": null
 },
 {
 "year": 2020,
@@ -37535,7 +37535,7 @@
 "confidence": "high",
 "paper": "2020/30_2_1.json",
 "key": "2020-main-std-30-2-1|2",
-"patternId": "RN-NEW-03"
+"patternId": null
 },
 {
 "year": 2020,
@@ -37823,7 +37823,7 @@
 "confidence": "high",
 "paper": "2020/30_2_1.json",
 "key": "2020-main-std-30-2-1|14",
-"patternId": "TG-CA-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -38355,7 +38355,7 @@
 "confidence": "high",
 "paper": "2020/30_2_1.json",
 "key": "2020-main-std-30-2-1|36",
-"patternId": "LE-NEW-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -38379,7 +38379,7 @@
 "confidence": "high",
 "paper": "2020/30_2_1.json",
 "key": "2020-main-std-30-2-1|37",
-"patternId": "CI-CN-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -38623,7 +38623,7 @@
 "confidence": "high",
 "paper": "2020/30_3_1.json",
 "key": "2020-main-std-30-3-1|7",
-"patternId": "RN-DEC-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -38791,7 +38791,7 @@
 "confidence": "high",
 "paper": "2020/30_3_1.json",
 "key": "2020-main-std-30-3-1|14",
-"patternId": "TG-CA-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -39103,7 +39103,7 @@
 "confidence": "high",
 "paper": "2020/30_3_1.json",
 "key": "2020-main-std-30-3-1|27",
-"patternId": "PO-NEW-02"
+"patternId": null
 },
 {
 "year": 2020,
@@ -39127,7 +39127,7 @@
 "confidence": "high",
 "paper": "2020/30_3_1.json",
 "key": "2020-main-std-30-3-1|28",
-"patternId": "CI-CN-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -39779,7 +39779,7 @@
 "confidence": "high",
 "paper": "2020/30_4_1.json",
 "key": "2020-main-std-30-4-1|15",
-"patternId": "SV-CO-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -39875,7 +39875,7 @@
 "confidence": "high",
 "paper": "2020/30_4_1.json",
 "key": "2020-main-std-30-4-1|19",
-"patternId": "RN-DEC-02"
+"patternId": null
 },
 {
 "year": 2020,
@@ -40235,7 +40235,7 @@
 "confidence": "high",
 "paper": "2020/30_4_1.json",
 "key": "2020-main-std-30-4-1|34",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2020,
@@ -40283,7 +40283,7 @@
 "confidence": "high",
 "paper": "2020/30_4_1.json",
 "key": "2020-main-std-30-4-1|36",
-"patternId": "ST-OGV-03"
+"patternId": null
 },
 {
 "year": 2020,
@@ -40355,7 +40355,7 @@
 "confidence": "high",
 "paper": "2020/30_4_1.json",
 "key": "2020-main-std-30-4-1|39",
-"patternId": "SV-FR-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -40379,7 +40379,7 @@
 "confidence": "high",
 "paper": "2020/30_4_1.json",
 "key": "2020-main-std-30-4-1|40",
-"patternId": "PO-DV-08"
+"patternId": null
 },
 {
 "year": 2020,
@@ -40403,7 +40403,7 @@
 "confidence": "high",
 "paper": "2020/30_5_1.json",
 "key": "2020-main-std-30-5-1|1",
-"patternId": "PO-DV-03"
+"patternId": null
 },
 {
 "year": 2020,
@@ -40935,7 +40935,7 @@
 "confidence": "high",
 "paper": "2020/30_5_1.json",
 "key": "2020-main-std-30-5-1|23",
-"patternId": "TG-CA-02"
+"patternId": null
 },
 {
 "year": 2020,
@@ -41055,7 +41055,7 @@
 "confidence": "high",
 "paper": "2020/30_5_1.json",
 "key": "2020-main-std-30-5-1|28",
-"patternId": "RN-NEW-04"
+"patternId": null
 },
 {
 "year": 2020,
@@ -41151,7 +41151,7 @@
 "confidence": "high",
 "paper": "2020/30_5_1.json",
 "key": "2020-main-std-30-5-1|32",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2020,
@@ -41223,7 +41223,7 @@
 "confidence": "high",
 "paper": "2020/30_5_1.json",
 "key": "2020-main-std-30-5-1|35",
-"patternId": "PO-DV-08"
+"patternId": null
 },
 {
 "year": 2020,
@@ -41343,7 +41343,7 @@
 "confidence": "high",
 "paper": "2020/30_5_1.json",
 "key": "2020-main-std-30-5-1|40",
-"patternId": "ST-OGV-03"
+"patternId": null
 },
 {
 "year": 2021,
@@ -42085,7 +42085,7 @@
 "confidence": "high",
 "paper": "2021-COMPTT/30_3_1.json",
 "key": "2021-compartment-std-30-3-1|26",
-"patternId": "CI-CN-01"
+"patternId": null
 },
 {
 "year": 2021,
@@ -42109,7 +42109,7 @@
 "confidence": "high",
 "paper": "2021-COMPTT/30_3_1.json",
 "key": "2021-compartment-std-30-3-1|27",
-"patternId": "PO-DV-02"
+"patternId": null
 },
 {
 "year": 2021,
@@ -42499,7 +42499,7 @@
 "paper": "2022-COMPTT/30_6_1.json",
 "paperId": "2022-compartment-std-30-6-1",
 "key": "2022-compartment-std-30-6-1|7",
-"patternId": "CI-CN-02"
+"patternId": null
 },
 {
 "year": 2022,
@@ -47824,7 +47824,7 @@
 "template": "Cone r={r1}, h={h}, water into cylinder r={r2}; height of water.",
 "confidence": "high",
 "key": "2016-main-std-30-2|12",
-"patternId": "SV-CO-07"
+"patternId": null
 },
 {
 "year": 2016,
@@ -47874,7 +47874,7 @@
 "template": "Sphere diameter {d} submerged raises level {h}; find cylinder diameter.",
 "confidence": "high",
 "key": "2016-main-std-30-2|14",
-"patternId": "SV-CO-08"
+"patternId": null
 },
 {
 "year": 2016,
@@ -48120,7 +48120,7 @@
 "template": "Triangle {A},{B},{C}; AD/AB=AE/AC={r}; area ADE vs ABC.",
 "confidence": "high",
 "key": "2016-main-std-30-2|24",
-"patternId": "AT-D-01"
+"patternId": null
 },
 {
 "year": 2016,
@@ -48218,7 +48218,7 @@
 "template": "Isosceles base {b}, altitude {h}; construct similar with factor {k}.",
 "confidence": "high",
 "key": "2016-main-std-30-2|28",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2016,
@@ -48558,7 +48558,7 @@
 "template": "Cone r={r1}, h={h1} emptied into cylinder r={r2}; height.",
 "confidence": "high",
 "key": "2016-main-std-30-3|11",
-"patternId": "SV-CO-07"
+"patternId": null
 },
 {
 "year": 2016,
@@ -48656,7 +48656,7 @@
 "template": "Sphere d={d} raises water {h}; cylinder diameter.",
 "confidence": "high",
 "key": "2016-main-std-30-3|15",
-"patternId": "SV-CO-08"
+"patternId": null
 },
 {
 "year": 2016,
@@ -48850,7 +48850,7 @@
 "template": "A,B,C given, AD/AB=AE/AC={k}; area ADE vs ABC.",
 "confidence": "high",
 "key": "2016-main-std-30-3|23",
-"patternId": "AT-D-01"
+"patternId": null
 },
 {
 "year": 2016,
@@ -49022,7 +49022,7 @@
 "template": "Triangle sides {a},{b},{c}; similar triangle at scale {k}.",
 "confidence": "high",
 "key": "2016-main-std-30-3|30",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2016,
@@ -49094,7 +49094,7 @@
 "template": "Value of cos^2({a}) - sin^2({90-a}).",
 "confidence": "high",
 "key": "2018-main-std-30-2|2",
-"patternId": "TG-CA-01"
+"patternId": null
 },
 {
 "year": 2018,
@@ -49574,7 +49574,7 @@
 "template": "Quartic {p(x)} with zeroes {2+sqrt3},{2-sqrt3}; find all zeroes.",
 "confidence": "high",
 "key": "2018-main-std-30-2|22",
-"patternId": "PO-DV-07"
+"patternId": null
 },
 {
 "year": 2018,
@@ -49598,7 +49598,7 @@
 "template": "Draw triangle BC={a}, AB={b}, angle B={t}; similar triangle scale {k}.",
 "confidence": "high",
 "key": "2018-main-std-30-2|23",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2018,
@@ -49718,7 +49718,7 @@
 "template": "Bucket frustum d1={d1}, d2={d2}, h={h}: sheet area; value question.",
 "confidence": "high",
 "key": "2018-main-std-30-2|28",
-"patternId": "SV-FR-01"
+"patternId": null
 },
 {
 "year": 2018,
@@ -49790,7 +49790,7 @@
 "template": "Find cos^2 {a} - sin^2 {90-a}.",
 "confidence": "high",
 "key": "2018-main-std-30-3|1",
-"patternId": "TG-CA-01"
+"patternId": null
 },
 {
 "year": 2018,
@@ -50104,7 +50104,7 @@
 "template": "Quartic {p(x)} has zeroes {2+-sqrt3}; find the rest.",
 "confidence": "high",
 "key": "2018-main-std-30-3|14",
-"patternId": "PO-DV-07"
+"patternId": null
 },
 {
 "year": 2018,
@@ -50344,7 +50344,7 @@
 "template": "Bucket frustum d1 {d1}, d2 {d2}, h {h}: sheet area; value question.",
 "confidence": "high",
 "key": "2018-main-std-30-3|24",
-"patternId": "SV-FR-01"
+"patternId": null
 },
 {
 "year": 2018,
@@ -50466,7 +50466,7 @@
 "template": "Triangle BC {a}, AB {b}, angle B {B}; construct similar with scale {k}.",
 "confidence": "high",
 "key": "2018-main-std-30-3|29",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2018,
@@ -50730,7 +50730,7 @@
 "template": "(a) A(x,y), {B}, {C} collinear: relation; (b) area of triangle {P},{Q},{R}.",
 "confidence": "high",
 "key": "2019-main-std-30-2-3|10",
-"patternId": "AT-B-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -50826,7 +50826,7 @@
 "template": "Evaluate {tan/cot, sin/sec complementary ratios} minus {product of tangents}.",
 "confidence": "medium",
 "key": "2019-main-std-30-2-3|14",
-"patternId": "TG-CA-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -50850,7 +50850,7 @@
 "template": "Spheres weigh {w1},{w2}, smaller radius {r}; melted into one; find diameter.",
 "confidence": "high",
 "key": "2019-main-std-30-2-3|15",
-"patternId": "SV-CO-05"
+"patternId": null
 },
 {
 "year": 2019,
@@ -50994,7 +50994,7 @@
 "template": "(a) k so {quartic}+k divisible by {quadratic}; (b) zeroes of {quadratic}, verify relations.",
 "confidence": "medium",
 "key": "2019-main-std-30-2-3|21",
-"patternId": "PO-DV-06"
+"patternId": null
 },
 {
 "year": 2019,
@@ -51090,7 +51090,7 @@
 "template": "Cylinder r {R}, h {H} filled into {n} cone+hemisphere, cone height {k} times radius; radius.",
 "confidence": "high",
 "key": "2019-main-std-30-2-3|25",
-"patternId": "SV-CO-03"
+"patternId": null
 },
 {
 "year": 2019,
@@ -51186,7 +51186,7 @@
 "template": "Less-than ogive for {classes, freqs}.",
 "confidence": "high",
 "key": "2019-main-std-30-2-3|29",
-"patternId": "ST-OGV-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -51210,7 +51210,7 @@
 "template": "(a) equilateral side {a}, similar triangle scale {m/n}; (b) concentric radii {r1},{r2}, tangents from outer point; measure.",
 "confidence": "high",
 "key": "2019-main-std-30-2-3|30",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -51310,7 +51310,7 @@
 "paperId": "2019-main-std-30-3-3",
 "paper": "2019/30_3_3.json",
 "key": "2019-main-std-30-3-3|4",
-"patternId": "RN-DEC-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -51430,7 +51430,7 @@
 "paperId": "2019-main-std-30-3-3",
 "paper": "2019/30_3_3.json",
 "key": "2019-main-std-30-3-3|9",
-"patternId": "QE-CSQ-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -51576,7 +51576,7 @@
 "paperId": "2019-main-std-30-3-3",
 "paper": "2019/30_3_3.json",
 "key": "2019-main-std-30-3-3|15",
-"patternId": "TG-CA-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -51720,7 +51720,7 @@
 "paperId": "2019-main-std-30-3-3",
 "paper": "2019/30_3_3.json",
 "key": "2019-main-std-30-3-3|21",
-"patternId": "CG-NEW-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -51768,7 +51768,7 @@
 "paperId": "2019-main-std-30-3-3",
 "paper": "2019/30_3_3.json",
 "key": "2019-main-std-30-3-3|23",
-"patternId": "ST-OGV-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -51890,7 +51890,7 @@
 "paperId": "2019-main-std-30-3-3",
 "paper": "2019/30_3_3.json",
 "key": "2019-main-std-30-3-3|28",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -51986,7 +51986,7 @@
 "template": "(a) tan {x}/cot {90-x}; (b) express sin {a} + cos {b} via angles in 0-45.",
 "confidence": "high",
 "key": "2019-main-std-30-4-3|2",
-"patternId": "TG-CA-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -52106,7 +52106,7 @@
 "template": "(a) {a}/x + {b}/y = {c}, {d}/x - {e}/y = {f}; (b) kx+{p}y={q}, {r}x+{s}y={t}: unique solution k.",
 "confidence": "medium",
 "key": "2019-main-std-30-4-3|7",
-"patternId": "LE-RD-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -52130,7 +52130,7 @@
 "template": "HCF of {a} and {b} by Euclid's algorithm.",
 "confidence": "high",
 "key": "2019-main-std-30-4-3|8",
-"patternId": "RN-EUC-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -52298,7 +52298,7 @@
 "template": "(a) cone h {h}, r {r} -> sphere: radius, SA; (b) pipe d {d}, speed {v}, tank d {D}, depth {H}: time.",
 "confidence": "high",
 "key": "2019-main-std-30-4-3|15",
-"patternId": "SV-CO-05"
+"patternId": null
 },
 {
 "year": 2019,
@@ -52370,7 +52370,7 @@
 "template": "{quartic}; zeroes {z1}, {z2} given; find all zeroes.",
 "confidence": "high",
 "key": "2019-main-std-30-4-3|18",
-"patternId": "PO-DV-07"
+"patternId": null
 },
 {
 "year": 2019,
@@ -52518,7 +52518,7 @@
 "template": "Circle radius {r}; tangents from point {d} from centre; measure.",
 "confidence": "high",
 "key": "2019-main-std-30-4-3|24",
-"patternId": "CI-CN-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -52662,7 +52662,7 @@
 "template": "Frustum h {h}, radii {r1}, {r2}; milk at {p}/L, sheet at {q}/100 cm^2: costs.",
 "confidence": "high",
 "key": "2019-main-std-30-4-3|30",
-"patternId": "SV-FR-03"
+"patternId": null
 },
 {
 "year": 2019,
@@ -53176,7 +53176,7 @@
 "template": "Is {g(x)} a factor of {f(x)}? Divide.",
 "confidence": "high",
 "key": "2019-main-std-30-5-2|21",
-"patternId": "PO-DV-05"
+"patternId": null
 },
 {
 "year": 2019,
@@ -53224,7 +53224,7 @@
 "template": "Frustum diameters {D},{d}, height {h}; sheet area and volume.",
 "confidence": "high",
 "key": "2019-main-std-30-5-2|23",
-"patternId": "SV-FR-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -53344,7 +53344,7 @@
 "template": "Evaluate {expression with complementary angles}.",
 "confidence": "medium",
 "key": "2019-main-std-30-5-2|28",
-"patternId": "TG-CA-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -53370,7 +53370,7 @@
 "template": "Right triangle legs {a},{b}; similar triangle scale {k}.",
 "confidence": "medium",
 "key": "2019-main-std-30-5-2|29",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -53780,7 +53780,7 @@
 "paper": "2019/30_5_3.json",
 "paperId": "2019-main-std-30-5-3",
 "key": "2019-main-std-30-5-3|16",
-"patternId": "PO-DV-07"
+"patternId": null
 },
 {
 "year": 2019,
@@ -54020,7 +54020,7 @@
 "paper": "2019/30_5_3.json",
 "paperId": "2019-main-std-30-5-3",
 "key": "2019-main-std-30-5-3|26",
-"patternId": "SV-FR-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -54118,7 +54118,7 @@
 "paper": "2019/30_5_3.json",
 "paperId": "2019-main-std-30-5-3",
 "key": "2019-main-std-30-5-3|30",
-"patternId": "CI-CN-03"
+"patternId": null
 },
 {
 "year": 2019,
@@ -54216,7 +54216,7 @@
 "paperId": "2019-main-std-30-1-2",
 "paper": "2019/30_1_2.json",
 "key": "2019-main-std-30-1-2|4",
-"patternId": "TG-CA-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -54408,7 +54408,7 @@
 "paperId": "2019-main-std-30-1-2",
 "paper": "2019/30_1_2.json",
 "key": "2019-main-std-30-1-2|12",
-"patternId": "RN-EUC-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -54722,7 +54722,7 @@
 "paperId": "2019-main-std-30-1-2",
 "paper": "2019/30_1_2.json",
 "key": "2019-main-std-30-1-2|25",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -54794,7 +54794,7 @@
 "paperId": "2019-main-std-30-1-2",
 "paper": "2019/30_1_2.json",
 "key": "2019-main-std-30-1-2|28",
-"patternId": "SV-FR-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -54990,7 +54990,7 @@
 "paperId": "2019-main-std-30-1-3",
 "paper": "2019/30_1_3.json",
 "key": "2019-main-std-30-1-3|6",
-"patternId": "TG-CA-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -55134,7 +55134,7 @@
 "paperId": "2019-main-std-30-1-3",
 "paper": "2019/30_1_3.json",
 "key": "2019-main-std-30-1-3|12",
-"patternId": "RN-EUC-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -55158,7 +55158,7 @@
 "paperId": "2019-main-std-30-1-3",
 "paper": "2019/30_1_3.json",
 "key": "2019-main-std-30-1-3|13",
-"patternId": "PO-NEW-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -55448,7 +55448,7 @@
 "paperId": "2019-main-std-30-1-3",
 "paper": "2019/30_1_3.json",
 "key": "2019-main-std-30-1-3|25",
-"patternId": "ST-OGV-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -55474,7 +55474,7 @@
 "paperId": "2019-main-std-30-1-3",
 "paper": "2019/30_1_3.json",
 "key": "2019-main-std-30-1-3|26",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -55498,7 +55498,7 @@
 "paperId": "2019-main-std-30-1-3",
 "paper": "2019/30_1_3.json",
 "key": "2019-main-std-30-1-3|27",
-"patternId": "SV-FR-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -55836,7 +55836,7 @@
 "template": "(a) A(x,y),{B},{C} collinear: relation; (b) area with vertices {P},{Q},{R}.",
 "confidence": "high",
 "key": "2019-main-std-30-2-2|11",
-"patternId": "AT-B-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -56100,7 +56100,7 @@
 "template": "(a) {quartic with k} divisible by {quadratic}; (b) zeroes of {quadratic}, verify relations.",
 "confidence": "medium",
 "key": "2019-main-std-30-2-2|22",
-"patternId": "PO-DV-06"
+"patternId": null
 },
 {
 "year": 2019,
@@ -56244,7 +56244,7 @@
 "template": "{class table}: less-than distribution and ogive.",
 "confidence": "high",
 "key": "2019-main-std-30-2-2|28",
-"patternId": "ST-OGV-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -56268,7 +56268,7 @@
 "template": "(a) equilateral side {a}, scale {k}; (b) concentric radii {r1},{r2}: tangents from P, measure.",
 "confidence": "high",
 "key": "2019-main-std-30-2-2|29",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -56558,7 +56558,7 @@
 "template": "Cuboid {l}x{b}x{h} recast into pipe inner r={r}, thickness {t}; length.",
 "confidence": "high",
 "key": "2017-main-std-30-2|11",
-"patternId": "SV-CO-05"
+"patternId": null
 },
 {
 "year": 2017,
@@ -56846,7 +56846,7 @@
 "template": "Triangle BC={a}, B={b}, A={c}; similar with factor {k}.",
 "confidence": "high",
 "key": "2017-main-std-30-2|23",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2017,
@@ -56870,7 +56870,7 @@
 "template": "Roof {l}x{b}, tank d={d}, h={h}; rainfall in cm.",
 "confidence": "high",
 "key": "2017-main-std-30-2|24",
-"patternId": "SV-CO-07"
+"patternId": null
 },
 {
 "year": 2017,
@@ -57452,7 +57452,7 @@
 "template": "Cuboid {l}x{b}x{h} to pipe inner r {r}, thickness {t}; length.",
 "confidence": "high",
 "key": "2017-main-std-30-3|17",
-"patternId": "SV-CO-05"
+"patternId": null
 },
 {
 "year": 2017,
@@ -57548,7 +57548,7 @@
 "template": "Points {A(k)},{B(k)},{C(k)} collinear; k?",
 "confidence": "high",
 "key": "2017-main-std-30-3|21",
-"patternId": "AT-B-01"
+"patternId": null
 },
 {
 "year": 2017,
@@ -57572,7 +57572,7 @@
 "template": "BC={a}, angle B={b}, angle A={c}; scale {k}.",
 "confidence": "high",
 "key": "2017-main-std-30-3|22",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2017,
@@ -57644,7 +57644,7 @@
 "template": "Roof {l}x{b}, tank d={d}, h={h}; rainfall depth.",
 "confidence": "high",
 "key": "2017-main-std-30-3|25",
-"patternId": "SV-CO-07"
+"patternId": null
 },
 {
 "year": 2017,
@@ -58298,7 +58298,7 @@
 "template": "Cylinder d={d}, h={h} into cones r={r}, h={k}; count.",
 "confidence": "high",
 "key": "2017-compartment-std-30-2|21",
-"patternId": "SV-CO-03"
+"patternId": null
 },
 {
 "year": 2017,
@@ -58322,7 +58322,7 @@
 "template": "Frustum h={h}, r1={a}, r2={b}; litres; revenue at {rate}; value.",
 "confidence": "high",
 "key": "2017-compartment-std-30-2|22",
-"patternId": "SV-FR-03"
+"patternId": null
 },
 {
 "year": 2017,
@@ -58468,7 +58468,7 @@
 "template": "Quadrilateral {P},{Q},{R},{S}: area.",
 "confidence": "high",
 "key": "2017-compartment-std-30-2|28",
-"patternId": "AT-C-01"
+"patternId": null
 },
 {
 "year": 2017,
@@ -58540,7 +58540,7 @@
 "template": "Triangle BC={a}, B={b}, A={c}; similar scale {k}.",
 "confidence": "high",
 "key": "2017-compartment-std-30-2|31",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2017,
@@ -58830,7 +58830,7 @@
 "template": "Triangle {A}{B}{C}: area of medial triangle.",
 "confidence": "high",
 "key": "2017-compartment-std-30-3|12",
-"patternId": "AT-C-01"
+"patternId": null
 },
 {
 "year": 2017,
@@ -59070,7 +59070,7 @@
 "template": "Cylinder d {d}, h {h} recast to cones r {r}, h {h2}; count.",
 "confidence": "high",
 "key": "2017-compartment-std-30-3|22",
-"patternId": "SV-CO-03"
+"patternId": null
 },
 {
 "year": 2017,
@@ -59094,7 +59094,7 @@
 "template": "Frustum h {h}, r {R}, {r}: litres, revenue at {p}/L, value.",
 "confidence": "high",
 "key": "2017-compartment-std-30-3|23",
-"patternId": "SV-FR-03"
+"patternId": null
 },
 {
 "year": 2017,
@@ -59242,7 +59242,7 @@
 "template": "Triangle AC {a}, angle A {A}, angle B {B}; similar at {k}.",
 "confidence": "high",
 "key": "2017-compartment-std-30-3|29",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2017,
@@ -59290,7 +59290,7 @@
 "template": "Quadrilateral {A}{B}{C}{D}; area.",
 "confidence": "high",
 "key": "2017-compartment-std-30-3|31",
-"patternId": "AT-C-01"
+"patternId": null
 },
 {
 "year": 2018,
@@ -59462,7 +59462,7 @@
 "template": "A,B,C angles of a triangle; show cosec((A+B)/2) = sec(C/2).",
 "confidence": "high",
 "key": "2018-compartment-std-30-2|7",
-"patternId": "TG-CA-02"
+"patternId": null
 },
 {
 "year": 2018,
@@ -59658,7 +59658,7 @@
 "template": "Triangle sides {a},{b},{c}; similar triangle {m/n} times.",
 "confidence": "high",
 "key": "2018-compartment-std-30-2|15",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2018,
@@ -59682,7 +59682,7 @@
 "template": "Euclid algorithm HCF of {m},{n}.",
 "confidence": "high",
 "key": "2018-compartment-std-30-2|16",
-"patternId": "RN-EUC-02"
+"patternId": null
 },
 {
 "year": 2018,
@@ -59754,7 +59754,7 @@
 "template": "Less-than ogive for {classes, freqs}.",
 "confidence": "high",
 "key": "2018-compartment-std-30-2|19",
-"patternId": "ST-OGV-01"
+"patternId": null
 },
 {
 "year": 2018,
@@ -59850,7 +59850,7 @@
 "template": "{n} frustum buckets h {h}, radii {R},{r}; sheet cost {c} per {area}; total; value comment.",
 "confidence": "high",
 "key": "2018-compartment-std-30-2|23",
-"patternId": "SV-FR-03"
+"patternId": null
 },
 {
 "year": 2018,
@@ -60018,7 +60018,7 @@
 "template": "Zeroes of {quartic} given ±sqrt({k}) are zeroes.",
 "confidence": "high",
 "key": "2018-compartment-std-30-2|30",
-"patternId": "PO-DV-08"
+"patternId": null
 },
 {
 "year": 2018,
@@ -60312,7 +60312,7 @@
 "paperId": "2018-compartment-std-30-3",
 "paper": "2018-COMPTT/30_3.json",
 "key": "2018-compartment-std-30-3|12",
-"patternId": "TG-CA-02"
+"patternId": null
 },
 {
 "year": 2018,
@@ -60338,7 +60338,7 @@
 "paperId": "2018-compartment-std-30-3",
 "paper": "2018-COMPTT/30_3.json",
 "key": "2018-compartment-std-30-3|13",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2018,
@@ -60386,7 +60386,7 @@
 "paperId": "2018-compartment-std-30-3",
 "paper": "2018-COMPTT/30_3.json",
 "key": "2018-compartment-std-30-3|15",
-"patternId": "ST-OGV-01"
+"patternId": null
 },
 {
 "year": 2018,
@@ -60436,7 +60436,7 @@
 "paperId": "2018-compartment-std-30-3",
 "paper": "2018-COMPTT/30_3.json",
 "key": "2018-compartment-std-30-3|17",
-"patternId": "RN-EUC-02"
+"patternId": null
 },
 {
 "year": 2018,
@@ -60628,7 +60628,7 @@
 "paperId": "2018-compartment-std-30-3",
 "paper": "2018-COMPTT/30_3.json",
 "key": "2018-compartment-std-30-3|25",
-"patternId": "PO-DV-08"
+"patternId": null
 },
 {
 "year": 2018,
@@ -60652,7 +60652,7 @@
 "paperId": "2018-compartment-std-30-3",
 "paper": "2018-COMPTT/30_3.json",
 "key": "2018-compartment-std-30-3|26",
-"patternId": "SV-FR-03"
+"patternId": null
 },
 {
 "year": 2018,
@@ -60868,7 +60868,7 @@
 "template": "(a) tan {x}/cot {90-x}; (b) cosec^2(1+cos)(1-cos) = k: k.",
 "confidence": "high",
 "key": "2019-compartment-std-30-1-2|5",
-"patternId": "TG-CA-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -61086,7 +61086,7 @@
 "template": "{quartic}; zeroes {z1}, {z2}: all zeroes.",
 "confidence": "high",
 "key": "2019-compartment-std-30-1-2|14",
-"patternId": "PO-DV-07"
+"patternId": null
 },
 {
 "year": 2019,
@@ -61230,7 +61230,7 @@
 "template": "HCF of {a}, {b} by Euclid.",
 "confidence": "high",
 "key": "2019-compartment-std-30-1-2|20",
-"patternId": "RN-EUC-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -61326,7 +61326,7 @@
 "template": "Frustum h {h}, radii {r1}, {r2}; milk {p}/L, sheet {q}/100 cm^2: costs.",
 "confidence": "high",
 "key": "2019-compartment-std-30-1-2|24",
-"patternId": "SV-FR-03"
+"patternId": null
 },
 {
 "year": 2019,
@@ -61352,7 +61352,7 @@
 "template": "Circle r {r1}; tangents from a point on concentric circle r {r2}.",
 "confidence": "high",
 "key": "2019-compartment-std-30-1-2|25",
-"patternId": "CI-CN-02"
+"patternId": null
 },
 {
 "year": 2019,
@@ -61616,7 +61616,7 @@
 "template": "(a) tan {a}/cot {90-a}; (b) cosec^2(1+cos)(1-cos) = k; k?",
 "confidence": "high",
 "key": "2019-compartment-std-30-1-3|6",
-"patternId": "TG-CA-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -61784,7 +61784,7 @@
 "template": "Quartic {p(x)} with zeroes {a},{b}; find others.",
 "confidence": "high",
 "key": "2019-compartment-std-30-1-3|13",
-"patternId": "PO-DV-07"
+"patternId": null
 },
 {
 "year": 2019,
@@ -61832,7 +61832,7 @@
 "template": "Odd positive integer has form {6q+r}.",
 "confidence": "high",
 "key": "2019-compartment-std-30-1-3|15",
-"patternId": "RN-EUC-03"
+"patternId": null
 },
 {
 "year": 2019,
@@ -62076,7 +62076,7 @@
 "template": "Well d={d}, depth {h}; ring width {w}; embankment height.",
 "confidence": "high",
 "key": "2019-compartment-std-30-1-3|25",
-"patternId": "SV-CO-07"
+"patternId": null
 },
 {
 "year": 2019,
@@ -62150,7 +62150,7 @@
 "template": "Circle r={r}, point at {d} from centre; draw tangents.",
 "confidence": "high",
 "key": "2019-compartment-std-30-1-3|28",
-"patternId": "CI-CN-01"
+"patternId": null
 },
 {
 "year": 2019,
@@ -62296,7 +62296,7 @@
 "paperId": "2022-main-std-30-1-2",
 "paper": "2022/30_1_2.json",
 "key": "2022-main-std-30-1-2|4",
-"patternId": "SV-CO-05"
+"patternId": null
 },
 {
 "year": 2022,
@@ -62442,7 +62442,7 @@
 "paperId": "2022-main-std-30-1-2",
 "paper": "2022/30_1_2.json",
 "key": "2022-main-std-30-1-2|10",
-"patternId": "CI-CN-03"
+"patternId": null
 },
 {
 "year": 2022,
@@ -62660,7 +62660,7 @@
 "paperId": "2022-main-std-30-1-3",
 "paper": "2022/30_1_3.json",
 "key": "2022-main-std-30-1-3|4",
-"patternId": "SV-CO-03"
+"patternId": null
 },
 {
 "year": 2022,
@@ -62756,7 +62756,7 @@
 "paperId": "2022-main-std-30-1-3",
 "paper": "2022/30_1_3.json",
 "key": "2022-main-std-30-1-3|8",
-"patternId": "CI-NEW-01"
+"patternId": null
 },
 {
 "year": 2022,
@@ -62950,7 +62950,7 @@
 "template": "Cuboid {l}x{b}x{h} recast into spheres radius {r}; number n.",
 "confidence": "high",
 "key": "2022-main-std-30-2-2|1",
-"patternId": "SV-CO-03"
+"patternId": null
 },
 {
 "year": 2022,
@@ -63166,7 +63166,7 @@
 "template": "Circle radius {r}: tangents inclined at {θ}.",
 "confidence": "high",
 "key": "2022-main-std-30-2-2|10",
-"patternId": "CI-CN-03"
+"patternId": null
 },
 {
 "year": 2022,
@@ -63436,7 +63436,7 @@
 "template": "Cuboid {l}x{b}x{h} into spheres radius {r}; find n.",
 "confidence": "medium",
 "key": "2022-main-std-30-2-3|6",
-"patternId": "SV-CO-03"
+"patternId": null
 },
 {
 "year": 2022,
@@ -63534,7 +63534,7 @@
 "template": "Circle r={r}, point at {d}; draw tangents.",
 "confidence": "high",
 "key": "2022-main-std-30-2-3|10",
-"patternId": "CI-CN-01"
+"patternId": null
 },
 {
 "year": 2022,
@@ -63870,7 +63870,7 @@
 "template": "Segment {l} cm, divide {m}:{n}. OR circle r={r}, point at {d}; tangents.",
 "confidence": "high",
 "key": "2022-main-std-30-3-2|9",
-"patternId": "CI-NEW-01"
+"patternId": null
 },
 {
 "year": 2022,
@@ -64232,7 +64232,7 @@
 "template": "(a) AB={l}, locate P with AP:PB={m}:{n}; (b) circle r={r}, point at {d}: tangents.",
 "confidence": "high",
 "key": "2022-main-std-30-3-3|9",
-"patternId": "CI-NEW-01"
+"patternId": null
 },
 {
 "year": 2022,
@@ -64572,7 +64572,7 @@
 "template": "Circle radius {r}; draw tangents inclined at {a}.",
 "confidence": "high",
 "key": "2022-main-std-30-4-2|8",
-"patternId": "CI-CN-03"
+"patternId": null
 },
 {
 "year": 2022,
@@ -64982,7 +64982,7 @@
 "template": "Circle radius {r}; tangents inclined at {theta}.",
 "confidence": "high",
 "key": "2022-main-std-30-4-3|10",
-"patternId": "CI-CN-03"
+"patternId": null
 },
 {
 "year": 2022,
@@ -65346,7 +65346,7 @@
 "paperId": "2022-compartment-std-30-6-2",
 "paper": "2022-COMPTT/30_6_2.json",
 "key": "2022-compartment-std-30-6-2|10",
-"patternId": "CI-CN-02"
+"patternId": null
 },
 {
 "year": 2022,
@@ -65658,7 +65658,7 @@
 "template": "Well d {d}, depth {h}; platform {l} x {b}: height.",
 "confidence": "high",
 "key": "2022-compartment-std-30-6-3|8",
-"patternId": "SV-CO-07"
+"patternId": null
 },
 {
 "year": 2022,
@@ -65684,7 +65684,7 @@
 "template": "Circle r {r1}; tangent from point on concentric circle r {r2}.",
 "confidence": "high",
 "key": "2022-compartment-std-30-6-3|9",
-"patternId": "CI-CN-02"
+"patternId": null
 },
 {
 "year": 2022,
@@ -68012,7 +68012,7 @@
 "paperId": "2023-main-std-30-2-2",
 "paper": "2023/30_2_2.json",
 "key": "2023-main-std-30-2-2|10",
-"patternId": "AT-MCQ-01"
+"patternId": null
 },
 {
 "year": 2023,
@@ -68959,7 +68959,7 @@
 "paperId": "2023-main-std-30-2-3",
 "paper": "2023/30_2_3.json",
 "key": "2023-main-std-30-2-3|9",
-"patternId": "AT-MCQ-01"
+"patternId": null
 },
 {
 "year": 2023,
@@ -116614,7 +116614,7 @@
 "template": "Segment {l}; point dividing in {m}:{n}.",
 "confidence": "high",
 "key": "2011-main-std-unknown|15",
-"patternId": "CI-NEW-01"
+"patternId": null
 },
 {
 "year": 2011,
@@ -116786,7 +116786,7 @@
 "template": "Frustum h={h}, R={R}, V={V}; r.",
 "confidence": "high",
 "key": "2011-main-std-unknown|22",
-"patternId": "SV-FR-02"
+"patternId": null
 },
 {
 "year": 2011,
@@ -116908,7 +116908,7 @@
 "template": "PQ={a}, P={angle}, PR={b}; similar with factor {k}.",
 "confidence": "high",
 "key": "2011-main-std-unknown|27",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2011,
@@ -117414,7 +117414,7 @@
 "template": "(sin {a}/cos {90-a})^2 + (cos {b}/sin {90-b})^2 - 2cos60.",
 "confidence": "high",
 "key": "2020-main-std-30-1-2|14",
-"patternId": "TG-CA-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -117732,7 +117732,7 @@
 "template": "Cone r={r} cut at mid-height; volume ratio.",
 "confidence": "high",
 "key": "2020-main-std-30-1-2|27",
-"patternId": "SV-NEW-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -117780,7 +117780,7 @@
 "template": "Area of {P},{Q},{R}. OR C divides A B in {m}:{n}; B.",
 "confidence": "high",
 "key": "2020-main-std-30-1-2|29",
-"patternId": "AT-B-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -117926,7 +117926,7 @@
 "template": "Yield table {t}; more-than ogive. OR median {m}, total {N}; x, y.",
 "confidence": "high",
 "key": "2020-main-std-30-1-2|35",
-"patternId": "ST-OGV-02"
+"patternId": null
 },
 {
 "year": 2020,
@@ -117974,7 +117974,7 @@
 "template": "Square not {m}q+{r1} or {m}q+{r2}. OR one of 3 consecutive divisible by 3.",
 "confidence": "high",
 "key": "2020-main-std-30-1-2|37",
-"patternId": "RN-NEW-04"
+"patternId": null
 },
 {
 "year": 2020,
@@ -118022,7 +118022,7 @@
 "template": "h={h}, radii {r1},{r2}, rate {c}/litre; cost.",
 "confidence": "high",
 "key": "2020-main-std-30-1-2|39",
-"patternId": "SV-FR-03"
+"patternId": null
 },
 {
 "year": 2020,
@@ -118046,7 +118046,7 @@
 "template": "Sides {a},{b},{c}; scale {k}.",
 "confidence": "high",
 "key": "2020-main-std-30-1-2|40",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2020,
@@ -118408,7 +118408,7 @@
 "template": "2cos{a}/sin{90-a} - tan{b}/cot{90-b} - cos0.",
 "confidence": "high",
 "key": "2020-main-std-30-1-3|15",
-"patternId": "TG-CA-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -118724,7 +118724,7 @@
 "template": "(a) area of {P},{Q},{R}; (b) C{C} divides A{A}B in {m}:{n}: B.",
 "confidence": "high",
 "key": "2020-main-std-30-1-3|28",
-"patternId": "AT-B-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -118796,7 +118796,7 @@
 "template": "Cone r={r} cut at mid-height; volume ratio of parts.",
 "confidence": "high",
 "key": "2020-main-std-30-1-3|31",
-"patternId": "SV-NEW-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -118892,7 +118892,7 @@
 "template": "(a) {table}: more-than ogive; (b) median {m}, total {N}: x, y.",
 "confidence": "medium",
 "key": "2020-main-std-30-1-3|35",
-"patternId": "ST-OGV-02"
+"patternId": null
 },
 {
 "year": 2020,
@@ -118916,7 +118916,7 @@
 "template": "h={h}, r1={a}, r2={b}; capacity, cost at {rate}/L.",
 "confidence": "high",
 "key": "2020-main-std-30-1-3|36",
-"patternId": "SV-FR-03"
+"patternId": null
 },
 {
 "year": 2020,
@@ -118940,7 +118940,7 @@
 "template": "(a) n^2 not of form {m}q+{r1} or {r2}; (b) one of n,n+1,n+2 divisible by 3.",
 "confidence": "high",
 "key": "2020-main-std-30-1-3|37",
-"patternId": "RN-NEW-04"
+"patternId": null
 },
 {
 "year": 2020,
@@ -118988,7 +118988,7 @@
 "template": "BC={a}, B={b}, A={c}; scale {k}.",
 "confidence": "high",
 "key": "2020-main-std-30-1-3|39",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2020,
@@ -119084,7 +119084,7 @@
 "template": "a = bq + r: condition on r.",
 "confidence": "high",
 "key": "2020-main-std-30-2-2|3",
-"patternId": "RN-NEW-03"
+"patternId": null
 },
 {
 "year": 2020,
@@ -119372,7 +119372,7 @@
 "template": "sin{a} cos{90-a} + cos{a} sin{90-a}.",
 "confidence": "high",
 "key": "2020-main-std-30-2-2|15",
-"patternId": "TG-CA-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -119468,7 +119468,7 @@
 "template": "tan A = cot B; A + B.",
 "confidence": "high",
 "key": "2020-main-std-30-2-2|19",
-"patternId": "TG-CA-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -119960,7 +119960,7 @@
 "template": "(a) Circle r {r}, tangents at {a}; (b) triangle {a},{b},{c} scaled by {k}.",
 "confidence": "high",
 "key": "2020-main-std-30-2-2|39",
-"patternId": "CI-CN-03"
+"patternId": null
 },
 {
 "year": 2020,
@@ -120104,7 +120104,7 @@
 "template": "a = bq + r with which condition on r?",
 "confidence": "high",
 "key": "2020-main-std-30-2-3|5",
-"patternId": "RN-NEW-03"
+"patternId": null
 },
 {
 "year": 2020,
@@ -120344,7 +120344,7 @@
 "template": "(a) sin{a}cos{b} + cos{a}sin{b}, a+b=90; (b) tan{x}/cot{90-x} + cot{y}/tan{90-y}.",
 "confidence": "high",
 "key": "2020-main-std-30-2-3|15",
-"patternId": "TG-CA-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -120802,7 +120802,7 @@
 "template": "Show [cos^2(45+t)+cos^2(45-t)] / [tan(60+t)tan(30-t)] = 1.",
 "confidence": "high",
 "key": "2020-main-std-30-2-3|34",
-"patternId": "TG-CA-02"
+"patternId": null
 },
 {
 "year": 2020,
@@ -120874,7 +120874,7 @@
 "template": "Together {T} h; {a} h + {b} h fills half; each alone.",
 "confidence": "high",
 "key": "2020-main-std-30-2-3|37",
-"patternId": "LE-NEW-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -120922,7 +120922,7 @@
 "template": "(a) radius {r}, P at {d}: tangents; (b) triangle {a},{b},angle {B}; similar at {m/n}.",
 "confidence": "high",
 "key": "2020-main-std-30-2-3|39",
-"patternId": "CI-CN-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -121210,7 +121210,7 @@
 "paperId": "2020-main-std-30-3-2",
 "paper": "2020/30_3_2.json",
 "key": "2020-main-std-30-3-2|11",
-"patternId": "TG-CA-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -121306,7 +121306,7 @@
 "paperId": "2020-main-std-30-3-2",
 "paper": "2020/30_3_2.json",
 "key": "2020-main-std-30-3-2|15",
-"patternId": "TG-CA-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -121680,7 +121680,7 @@
 "paperId": "2020-main-std-30-3-2",
 "paper": "2020/30_3_2.json",
 "key": "2020-main-std-30-3-2|30",
-"patternId": "PO-DV-03"
+"patternId": null
 },
 {
 "year": 2020,
@@ -121872,7 +121872,7 @@
 "paperId": "2020-main-std-30-3-2",
 "paper": "2020/30_3_2.json",
 "key": "2020-main-std-30-3-2|38",
-"patternId": "ST-OGV-03"
+"patternId": null
 },
 {
 "year": 2020,
@@ -122088,7 +122088,7 @@
 "template": "A{A}, B({x}, k), C{C} collinear: k.",
 "confidence": "high",
 "key": "2020-main-std-30-3-3|7",
-"patternId": "AT-B-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -122208,7 +122208,7 @@
 "template": "{a}cot{x}/tan{90-x} - {b}(cos{y}/sin{90-y}).",
 "confidence": "medium",
 "key": "2020-main-std-30-3-3|12",
-"patternId": "TG-CA-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -122642,7 +122642,7 @@
 "template": "(a) {cubic} / g(x): quotient {q}, remainder {r}: g(x); (b) x^2 - {b}x + k, alpha^2+beta^2 = {S}: k.",
 "confidence": "high",
 "key": "2020-main-std-30-3-3|30",
-"patternId": "PO-DV-03"
+"patternId": null
 },
 {
 "year": 2020,
@@ -122690,7 +122690,7 @@
 "template": "A(k+1, 2k), B({p}k, 2k+{q}), C({r}k-1, {s}k) collinear: k.",
 "confidence": "high",
 "key": "2020-main-std-30-3-3|32",
-"patternId": "AT-B-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -122834,7 +122834,7 @@
 "template": "Classes {c}, freq {f}: more-than ogive, median.",
 "confidence": "high",
 "key": "2020-main-std-30-3-3|38",
-"patternId": "ST-OGV-03"
+"patternId": null
 },
 {
 "year": 2020,
@@ -122906,7 +122906,7 @@
 "template": "{A}, origin, (a,b) collinear; relation.",
 "confidence": "high",
 "key": "2020-main-std-30-4-2|1",
-"patternId": "AT-B-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -123218,7 +123218,7 @@
 "template": "Sphere r={R} into {n} balls; radius.",
 "confidence": "high",
 "key": "2020-main-std-30-4-2|14",
-"patternId": "SV-CO-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -123266,7 +123266,7 @@
 "template": "{p}/{2^m 5^n} terminates after how many places?",
 "confidence": "medium",
 "key": "2020-main-std-30-4-2|16",
-"patternId": "RN-DEC-02"
+"patternId": null
 },
 {
 "year": 2020,
@@ -123506,7 +123506,7 @@
 "template": "Evaluate {cos a/sin(90-a) + ... tan b tan(90-b)}.",
 "confidence": "medium",
 "key": "2020-main-std-30-4-2|26",
-"patternId": "TG-CA-02"
+"patternId": null
 },
 {
 "year": 2020,
@@ -123554,7 +123554,7 @@
 "template": "(a) {a/x + b/y = c}, {d/x - e/y = f}; 5x-3y; (b) {d1} km {c1}, {d2} km {c2}; fixed, rate, fare for {d3}.",
 "confidence": "medium",
 "key": "2020-main-std-30-4-2|28",
-"patternId": "LE-RD-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -123581,7 +123581,7 @@
 "template": "(a) sides {a},{b},{c}, scale {k}; (b) circle r={r}, tangents at {t}.",
 "confidence": "high",
 "key": "2020-main-std-30-4-2|29",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2020,
@@ -123751,7 +123751,7 @@
 "template": "Radii {R},{r}, depth {h}; volume and sheet area.",
 "confidence": "high",
 "key": "2020-main-std-30-4-2|36",
-"patternId": "SV-FR-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -123775,7 +123775,7 @@
 "template": "(a) {f(x)} with zeroes +-sqrt{3}; others; (b) reciprocal zeroes of {ax^2+bx+c}.",
 "confidence": "high",
 "key": "2020-main-std-30-4-2|37",
-"patternId": "PO-DV-08"
+"patternId": null
 },
 {
 "year": 2020,
@@ -123799,7 +123799,7 @@
 "template": "Classes {c}, freq {f}; less-than ogive, median.",
 "confidence": "high",
 "key": "2020-main-std-30-4-2|38",
-"patternId": "ST-OGV-03"
+"patternId": null
 },
 {
 "year": 2020,
@@ -123991,7 +123991,7 @@
 "paper": "2020/30_4_3.json",
 "paperId": "2020-main-std-30-4-3",
 "key": "2020-main-std-30-4-3|6",
-"patternId": "AT-B-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -124015,7 +124015,7 @@
 "paper": "2020/30_4_3.json",
 "paperId": "2020-main-std-30-4-3",
 "key": "2020-main-std-30-4-3|7",
-"patternId": "TG-CA-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -124135,7 +124135,7 @@
 "paper": "2020/30_4_3.json",
 "paperId": "2020-main-std-30-4-3",
 "key": "2020-main-std-30-4-3|12",
-"patternId": "SV-CO-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -124231,7 +124231,7 @@
 "paper": "2020/30_4_3.json",
 "paperId": "2020-main-std-30-4-3",
 "key": "2020-main-std-30-4-3|16",
-"patternId": "RN-DEC-02"
+"patternId": null
 },
 {
 "year": 2020,
@@ -124471,7 +124471,7 @@
 "paper": "2020/30_4_3.json",
 "paperId": "2020-main-std-30-4-3",
 "key": "2020-main-std-30-4-3|26",
-"patternId": "TG-CA-02"
+"patternId": null
 },
 {
 "year": 2020,
@@ -124495,7 +124495,7 @@
 "paper": "2020/30_4_3.json",
 "paperId": "2020-main-std-30-4-3",
 "key": "2020-main-std-30-4-3|27",
-"patternId": "LE-RD-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -124571,7 +124571,7 @@
 "paper": "2020/30_4_3.json",
 "paperId": "2020-main-std-30-4-3",
 "key": "2020-main-std-30-4-3|30",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2020,
@@ -124715,7 +124715,7 @@
 "paper": "2020/30_4_3.json",
 "paperId": "2020-main-std-30-4-3",
 "key": "2020-main-std-30-4-3|36",
-"patternId": "PO-DV-08"
+"patternId": null
 },
 {
 "year": 2020,
@@ -124739,7 +124739,7 @@
 "paper": "2020/30_4_3.json",
 "paperId": "2020-main-std-30-4-3",
 "key": "2020-main-std-30-4-3|37",
-"patternId": "SV-FR-01"
+"patternId": null
 },
 {
 "year": 2020,
@@ -124787,7 +124787,7 @@
 "paper": "2020/30_4_3.json",
 "paperId": "2020-main-std-30-4-3",
 "key": "2020-main-std-30-4-3|39",
-"patternId": "ST-OGV-03"
+"patternId": null
 },
 {
 "year": 2020,
@@ -125365,7 +125365,7 @@
 "paperId": "2020-main-std-30-5-2",
 "paper": "2020/30_5_2.json",
 "key": "2020-main-std-30-5-2|23",
-"patternId": "SV-CO-03"
+"patternId": null
 },
 {
 "year": 2020,
@@ -125439,7 +125439,7 @@
 "paperId": "2020-main-std-30-5-2",
 "paper": "2020/30_5_2.json",
 "key": "2020-main-std-30-5-2|26",
-"patternId": "TG-CA-02"
+"patternId": null
 },
 {
 "year": 2020,
@@ -125490,7 +125490,7 @@
 "paperId": "2020-main-std-30-5-2",
 "paper": "2020/30_5_2.json",
 "key": "2020-main-std-30-5-2|28",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2020,
@@ -125562,7 +125562,7 @@
 "paperId": "2020-main-std-30-5-2",
 "paper": "2020/30_5_2.json",
 "key": "2020-main-std-30-5-2|31",
-"patternId": "RN-EUC-02"
+"patternId": null
 },
 {
 "year": 2020,
@@ -125720,7 +125720,7 @@
 "paperId": "2020-main-std-30-5-2",
 "paper": "2020/30_5_2.json",
 "key": "2020-main-std-30-5-2|37",
-"patternId": "ST-OGV-03"
+"patternId": null
 },
 {
 "year": 2020,
@@ -125792,7 +125792,7 @@
 "paperId": "2020-main-std-30-5-2",
 "paper": "2020/30_5_2.json",
 "key": "2020-main-std-30-5-2|40",
-"patternId": "PO-DV-08"
+"patternId": null
 },
 {
 "year": 2020,
@@ -125936,7 +125936,7 @@
 "paperId": "2020-main-std-30-5-3",
 "paper": "2020/30_5_3.json",
 "key": "2020-main-std-30-5-3|6",
-"patternId": "PO-DV-03"
+"patternId": null
 },
 {
 "year": 2020,
@@ -126418,7 +126418,7 @@
 "paperId": "2020-main-std-30-5-3",
 "paper": "2020/30_5_3.json",
 "key": "2020-main-std-30-5-3|26",
-"patternId": "TG-CA-02"
+"patternId": null
 },
 {
 "year": 2020,
@@ -126493,7 +126493,7 @@
 "paperId": "2020-main-std-30-5-3",
 "paper": "2020/30_5_3.json",
 "key": "2020-main-std-30-5-3|29",
-"patternId": "CI-NEW-02"
+"patternId": null
 },
 {
 "year": 2020,
@@ -126613,7 +126613,7 @@
 "paperId": "2020-main-std-30-5-3",
 "paper": "2020/30_5_3.json",
 "key": "2020-main-std-30-5-3|34",
-"patternId": "RN-NEW-04"
+"patternId": null
 },
 {
 "year": 2020,
@@ -126661,7 +126661,7 @@
 "paperId": "2020-main-std-30-5-3",
 "paper": "2020/30_5_3.json",
 "key": "2020-main-std-30-5-3|36",
-"patternId": "ST-OGV-03"
+"patternId": null
 },
 {
 "year": 2020,
@@ -126709,7 +126709,7 @@
 "paperId": "2020-main-std-30-5-3",
 "paper": "2020/30_5_3.json",
 "key": "2020-main-std-30-5-3|38",
-"patternId": "PO-DV-08"
+"patternId": null
 },
 {
 "year": 2020,

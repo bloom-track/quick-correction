@@ -2299,54 +2299,6 @@
      "addedFromBoard": true
     }
    ]
-  },
-  {
-   "name": "Complementary-angle relations",
-   "scope": "verify",
-   "scopeNote": "Complementary-angle relations were probably removed from the syllabus (unconfirmed). The 2018-2019 rows that need them are marked legacy, and no 2024-2026 row needs them, so targets stay 0. A person must confirm.",
-   "patterns": [
-    {
-     "id": "TG-CA-01",
-     "pattern": "Evaluate or solve using sin(90° − A) = cos A style relations (MCQ)",
-     "sample": "The value of $\\cos^240^\\circ-\\sin^250^\\circ$ is",
-     "slot": "A-MCQ",
-     "targets": {
-      "easy": 0,
-      "medium": 0,
-      "hard": 0
-     },
-     "figure": false,
-     "competency": false,
-     "seenOnBoard": 23,
-     "seenIn": [
-      "2018 main",
-      "2019 compartment",
-      "2019 main",
-      "2020 main"
-     ],
-     "existingIds": []
-    },
-    {
-     "id": "TG-CA-02",
-     "pattern": "Evaluate or solve using complementary-angle relations, including triangle-angle forms (3 marks)",
-     "sample": "Evaluate $\\frac{\\tan35^\\circ}{\\cot55^\\circ}+\\cos20^\\circ\\operatorname{cosec}70^\\circ$.",
-     "slot": "C",
-     "targets": {
-      "easy": 0,
-      "medium": 0,
-      "hard": 0
-     },
-     "figure": false,
-     "competency": false,
-     "seenOnBoard": 14,
-     "seenIn": [
-      "2018 compartment",
-      "2019 main",
-      "2020 main"
-     ],
-     "existingIds": []
-    }
-   ]
   }
  ],
  "outOfScope": [

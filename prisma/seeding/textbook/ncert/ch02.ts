@@ -62,18 +62,6 @@ export const NCERT_CH02: TextbookQuestion[] = [
       { step: 'Gets $x^{2} - 4x - 5$', marks: 1 },
     ],
   },
-  {
-    id: 'nc-02-ex05', chapter: C, topic: 'Cubic polynomials: zeroes and coefficients', ref: `${R} Example 5`,
-    type: 'long', complexity: 'hard', marks: 4,
-    text: 'Show that $2$, $-3$ and $\\frac{1}{2}$ are the zeroes of $p(x) = 2x^{3} + x^{2} - 13x + 6$, and then verify the relationships between the zeroes and the coefficients.',
-    answer: '$p(2) = 16 + 4 - 26 + 6 = 0$; $p(-3) = -54 + 9 + 39 + 6 = 0$; $p\\left(\\frac{1}{2}\\right) = \\frac{1}{4} + \\frac{1}{4} - \\frac{13}{2} + 6 = 0$. So the zeroes are $\\alpha = 2$, $\\beta = -3$, $\\gamma = \\frac{1}{2}$. Here $a = 2$, $b = 1$, $c = -13$, $d = 6$. $\\alpha + \\beta + \\gamma = 2 - 3 + \\frac{1}{2} = -\\frac{1}{2} = -\\frac{b}{a}$. $\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = -6 - \\frac{3}{2} + 1 = -\\frac{13}{2} = \\frac{c}{a}$. $\\alpha\\beta\\gamma = 2 \\times (-3) \\times \\frac{1}{2} = -3 = -\\frac{6}{2} = -\\frac{d}{a}$. All three relationships hold.',
-    steps: [
-      { step: 'Shows $p(2) = p(-3) = p(\\frac{1}{2}) = 0$', marks: 1 },
-      { step: 'Verifies sum of zeroes $= -\\frac{b}{a} = -\\frac{1}{2}$', marks: 1 },
-      { step: 'Verifies sum of products in pairs $= \\frac{c}{a} = -\\frac{13}{2}$', marks: 1 },
-      { step: 'Verifies product $= -\\frac{d}{a} = -3$', marks: 1 },
-    ],
-  },
 
   // Exercise 2.2
   {

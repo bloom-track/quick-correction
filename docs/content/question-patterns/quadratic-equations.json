@@ -2024,47 +2024,6 @@
      "addedFromBoard": true
     }
    ]
-  },
-  {
-   "name": "Completing the square",
-   "scope": "verify",
-   "scopeNote": "Believed cut from the rationalised syllabus; not confirmed from an official source. The only board evidence is one legacy 2019 row, and no 2024-2026 row tests it. Targets stay 0 until a person checks.",
-   "patterns": [
-    {
-     "id": "QE-CSQ-01",
-     "pattern": "Complete the square to show a quadratic has no real solution",
-     "sample": "By completing the square, show that $x^2+4x+7=0$ has no real solution.",
-     "slot": "B",
-     "targets": {
-      "easy": 0,
-      "medium": 0,
-      "hard": 0
-     },
-     "figure": false,
-     "competency": false,
-     "seenOnBoard": 2,
-     "seenIn": [
-      "2019 main"
-     ],
-     "existingIds": []
-    },
-    {
-     "id": "QE-CSQ-02",
-     "pattern": "Solve a quadratic by completing the square",
-     "sample": "Solve $x^2+6x+5=0$ by completing the square.",
-     "slot": "C",
-     "targets": {
-      "easy": 0,
-      "medium": 0,
-      "hard": 0
-     },
-     "figure": false,
-     "competency": false,
-     "seenOnBoard": 0,
-     "seenIn": [],
-     "existingIds": []
-    }
-   ]
   }
  ],
  "outOfScope": [],

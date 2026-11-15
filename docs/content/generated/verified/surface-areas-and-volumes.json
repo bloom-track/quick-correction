@@ -106,27 +106,6 @@
   },
   {
     "chapter": "Surface Areas and Volumes",
-    "topic": "Conversion and recasting of solids",
-    "slot": "A-mcq (1 mark)",
-    "type": "mcq",
-    "marks": 1,
-    "complexity": "easy",
-    "competency": false,
-    "text": "A solid metal sphere of radius 6 cm is melted and recast into a solid cone of base radius 12 cm. The height of the cone is",
-    "options": [
-      "12 cm",
-      "6 cm",
-      "3 cm",
-      "8 cm"
-    ],
-    "answer": "Correct option: B) 6 cm. (4/3)π(6)³ = 288π = (1/3)π(12)²h = 48πh, so h = 6 cm.",
-    "verification": {
-      "status": "ok",
-      "note": ""
-    }
-  },
-  {
-    "chapter": "Surface Areas and Volumes",
     "topic": "Surface area of solids",
     "slot": "A-mcq (1 mark)",
     "type": "mcq",
@@ -271,21 +250,6 @@
   },
   {
     "chapter": "Surface Areas and Volumes",
-    "topic": "Conversion and recasting of solids",
-    "slot": "D-long (5 marks)",
-    "type": "long",
-    "marks": 5,
-    "complexity": "hard",
-    "competency": true,
-    "text": "A solid metal sphere of radius 10.5 cm is melted. (a) If it is recast into small solid cones, each of base radius 3.5 cm and height 3 cm, how many cones are obtained? (b) If instead the same sphere is recast into a solid cylinder of base radius 10.5 cm, find the height of the cylinder.",
-    "answer": "Volume of sphere = (4/3)π(10.5)³ = (4/3)π(1157.625) = 1543.5π cm³.\n(a) Volume of one cone = (1/3)π(3.5)²(3) = 12.25π cm³. Number of cones = 1543.5π ÷ 12.25π = 126.\n(b) πR²H = 1543.5π gives 110.25 H = 1543.5, so H = 14 cm.\nAnswer: (a) 126 cones (b) 14 cm.",
-    "verification": {
-      "status": "ok",
-      "note": ""
-    }
-  },
-  {
-    "chapter": "Surface Areas and Volumes",
     "topic": "Capacity and cost problems",
     "slot": "D-long (5 marks)",
     "type": "long",
@@ -324,21 +288,6 @@
     "competency": true,
     "text": "A village panchayat installs a closed water tank. The tank is a cylinder of radius 2.1 m and height 5 m, with a hemispherical dome of the same radius fixed on top. The whole tank (cylinder and dome) holds water. Use π = 22/7.\n(i) Find the volume of the cylindrical part. [1]\n(ii) Find the volume of the hemispherical dome. [1]\n(iii) Find the cost of painting the outer curved surface of the tank (cylinder and dome only, not the base) at ₹ 25 per m². [2]",
     "answer": "(i) Cylinder = 22/7 × 2.1² × 5 = 69.3 m³.\n(ii) Dome = (2/3) × 22/7 × 2.1³ = 19.404 m³.\n(iii) Area = 2πrh + 2πr² = 2 × 22/7 × 2.1 × 5 + 2 × 22/7 × 2.1² = 66 + 27.72 = 93.72 m². Cost = 93.72 × 25 = ₹ 2,343.",
-    "verification": {
-      "status": "ok",
-      "note": ""
-    }
-  },
-  {
-    "chapter": "Surface Areas and Volumes",
-    "topic": "Conversion and recasting of solids",
-    "slot": "E-case-study (4 marks, with sub-parts)",
-    "type": "case",
-    "marks": 4,
-    "complexity": "medium",
-    "competency": true,
-    "text": "A farmer fills a cylindrical storage tank using a pipe of circular cross-section with internal diameter 14 cm. Water flows out of the pipe at a speed of 4 m per second. The tank has a circular base of radius 2.8 m. Use π = 22/7.\n(i) Find the area of cross-section of the pipe in cm². [1]\n(ii) Find the volume of water, in litres, flowing out of the pipe in one second. (1 litre = 1000 cm³) [1]\n(iii) The pipe runs for 10 minutes. Find the rise in the water level in the tank. [2]",
-    "answer": "(i) r = 7 cm; area = 22/7 × 49 = 154 cm².\n(ii) In 1 second the water column has length 400 cm, so volume = 154 × 400 = 61,600 cm³ = 61.6 litres.\n(iii) In 10 minutes (600 s): 61.6 × 600 = 36,960 litres = 36.96 m³. Base area of tank = 22/7 × 2.8² = 24.64 m². Rise = 36.96 ÷ 24.64 = 1.5 m.",
     "verification": {
       "status": "ok",
       "note": ""
