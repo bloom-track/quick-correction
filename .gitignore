@@ -74,3 +74,4 @@ docs/content/generated/batch2/existing/
 # Marker accuracy cases hold students' work and the results compare against it: keep them local
 evals/marking/cases/
 evals/marking/results/
+docs/content/pyq-xii/
