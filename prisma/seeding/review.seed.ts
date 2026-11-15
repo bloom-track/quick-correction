@@ -20,6 +20,7 @@ type Correction = {
 };
 const data = JSON.parse(readFileSync(new URL('./question-review.data.json', import.meta.url), 'utf8')) as {
   corrections: Correction[]; textbookRefs: { id: string; originalText: string; textbookRef: string }[];
+  approvedAfterCheck?: { questions: { id: string; text: string }[] };
 };
 
 async function main() {
@@ -51,7 +52,16 @@ async function main() {
     const q = await find(r.id, r.originalText);
     if (q && !q.textbookRef) await db.question.update({ where: { id: q.id }, data: { textbookRef: r.textbookRef } });
   }
-  console.log(`✅ Review corrections: ${applied} applied, ${skipped} kept (edited since), ${missing} not in this database.`);
+  // Drafts that passed the answer checks go live. Only drafts change, so a later reject or flag stands.
+  let approved = 0;
+  for (const a of data.approvedAfterCheck?.questions ?? []) {
+    const q = await find(a.id, a.text);
+    if (q?.reviewStatus === 'draft' && q.text === a.text) {
+      await db.question.update({ where: { id: q.id }, data: { reviewStatus: 'approved', isActive: true } });
+      approved++;
+    }
+  }
+  console.log(`✅ Review corrections: ${applied} applied, ${skipped} kept (edited since), ${missing} not in this database; ${approved} drafts approved.`);
 }
 
 main().then(() => process.exit(0)).catch((e) => { console.error(e); process.exit(1); });
