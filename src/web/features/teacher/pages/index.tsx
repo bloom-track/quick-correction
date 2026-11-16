@@ -2,8 +2,9 @@
  * Teacher home — `/teacher`. What needs doing, and the shortest path to a new paper.
  */
 import { Link } from 'react-router-dom';
-import { Button, Card, CardContent, Alert, AlertDescription } from '@bloomneo/uikit';
-import { Plus, FileText, Users, ClipboardCheck, ChevronRight, AlertTriangle, Loader2, FlaskConical } from 'lucide-react';
+import { Button, Alert, AlertDescription } from '@bloomneo/uikit';
+import { Plus, FileText, Users, ClipboardCheck, ChevronRight, AlertTriangle, Loader2, FlaskConical, Sparkles } from 'lucide-react';
+import { CARD, PageHeader, Stat, IconChip } from '@/shared/ui';
 import { SEO } from '@/shared/SEO';
 import { api } from '@/shared/api';
 import { useAuth } from '@/features/auth/hooks';
@@ -26,55 +27,48 @@ export default function TeacherHome() {
   if (error || !data) return <Alert variant="destructive"><AlertTriangle className="size-4" /><AlertDescription>{error ?? 'Could not load your dashboard.'}</AlertDescription></Alert>;
 
   const { papers, students, review } = data;
-  const tile = 'flex items-center gap-3 rounded-xl border border-border bg-card p-4 transition hover:bg-muted/50';
+  const tile = `${CARD} block p-3.5 transition hover:-translate-y-0.5 sm:p-4`;
+  const hour = new Date().getHours();
+  const hello = hour < 12 ? 'Good morning' : hour < 17 ? 'Good afternoon' : 'Good evening';
 
   return (
     <>
       <SEO title="Teacher" />
-      <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
-        <div>
-          <h1 className="text-2xl font-semibold">{first ? `Hello, ${first}` : 'Hello'}</h1>
-          <p className="text-sm text-muted-foreground">Make a paper, try it out, and check the marks.</p>
+      <PageHeader
+        eyebrow={`${hello} · ${new Date().toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long' })}`}
+        title={first ? `Hello, ${first}` : 'Hello'}
+        description="Make a paper, try it out, and check the marks."
+        actions={<>
+          <Button asChild><Link to="/teacher/chat"><Sparkles className="size-4" /> Create with chat</Link></Button>
+          <Button asChild variant="outline"><Link to="/teacher/papers/new"><Plus className="size-4" /> New paper</Link></Button>
+        </>}
+      />
+
+      <div className="mb-6 grid grid-cols-2 gap-2.5 sm:gap-3 md:mb-8 md:grid-cols-3">
+        <Link to="/teacher/papers" className={tile}><Stat tone="purple" icon={FileText} label="Papers" value={papers.length} sub="made so far" /></Link>
+        <Link to="/teacher/students" className={tile}><Stat tone="green" icon={Users} label="Students" value={students.length} sub="in your classes" /></Link>
+        <Link to="/teacher/review" className={`${tile} col-span-2 md:col-span-1`}><Stat tone="amber" icon={ClipboardCheck} label="To review" value={review.length} sub={review.length ? 'marked, waiting for your check' : 'nothing waiting'} /></Link>
+      </div>
+
+      <div className={`${CARD} mb-6 flex items-start gap-3 p-4 md:mb-8`}>
+        <IconChip icon={FlaskConical} />
+        <div className="text-sm">
+          <p className="font-semibold">Try a paper yourself</p>
+          <p className="mt-1 text-muted-foreground">
+            Create a paper, open it and press <strong>Test it</strong>. It is set for a practice student, you add a photo of an
+            answer page, and the marks come back for you to check. No parent account needed.
+          </p>
         </div>
-        <Button asChild><Link to="/teacher/papers/new"><Plus className="size-4" /> New paper</Link></Button>
       </div>
-
-      <div className="mb-8 grid gap-3 sm:grid-cols-3">
-        <Link to="/teacher/papers" className={tile}>
-          <FileText className="size-5 text-primary" aria-hidden />
-          <span><span className="block text-xl font-semibold">{papers.length}</span><span className="text-sm text-muted-foreground">Papers</span></span>
-        </Link>
-        <Link to="/teacher/students" className={tile}>
-          <Users className="size-5 text-primary" aria-hidden />
-          <span><span className="block text-xl font-semibold">{students.length}</span><span className="text-sm text-muted-foreground">Students</span></span>
-        </Link>
-        <Link to="/teacher/review" className={tile}>
-          <ClipboardCheck className="size-5 text-primary" aria-hidden />
-          <span><span className="block text-xl font-semibold">{review.length}</span><span className="text-sm text-muted-foreground">To review</span></span>
-        </Link>
-      </div>
-
-      <Card className="mb-8">
-        <CardContent className="flex items-start gap-3 p-4">
-          <FlaskConical className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden />
-          <div className="text-sm">
-            <p className="font-medium">Try a paper yourself</p>
-            <p className="mt-1 text-muted-foreground">
-              Create a paper, open it and press <strong>Test it</strong>. It is set for a practice student, you add a photo of an
-              answer page, and the marks come back for you to check. No parent account needed.
-            </p>
-          </div>
-        </CardContent>
-      </Card>
 
       <div className="mb-3 flex items-center justify-between">
-        <h2 className="font-semibold">Recent papers</h2>
+        <h2 className="text-sm font-semibold">Recent papers</h2>
         {papers.length > 0 && <Link to="/teacher/papers" className="text-sm text-primary hover:underline">All papers</Link>}
       </div>
       {papers.length === 0 ? (
-        <p className="rounded-xl border border-dashed border-border p-8 text-center text-sm text-muted-foreground">No papers yet. Make your first one.</p>
+        <p className="rounded-[20px] border border-dashed border-border p-8 text-center text-sm text-muted-foreground">No papers yet. Make your first one.</p>
       ) : (
-        <ul className="divide-y divide-border rounded-xl border border-border">
+        <ul className={`${CARD} divide-y divide-border/70 overflow-hidden`}>
           {papers.slice(0, 5).map((p) => (
             <li key={p.id}>
               <Link to={`/teacher/papers/${p.id}`} className="flex items-center gap-3 px-4 py-3 hover:bg-muted/50">

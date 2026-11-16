@@ -88,32 +88,14 @@
 .exam-steps li { display: flex; justify-content: space-between; gap: 4mm; border-top: 0.4pt dotted #888; padding: 0.4mm 0; }
 .exam-steps li > span:last-child { flex: none; font-weight: 700; }
 
-/* Full-screen preview (screen only) */
+/* Full-screen PDF viewer */
 .exam-overlay { position: fixed; inset: 0; z-index: 60; display: flex; flex-direction: column; background: #3b3f46; }
 .exam-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; padding: 0.6rem 1rem; background: #111827; color: #f3f4f6; }
 .exam-bar label { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.875rem; }
-.exam-scroll { flex: 1; overflow: auto; padding: 1.25rem 0.75rem 2rem; }
-.exam-scroll .exam-sheet { box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45); margin-bottom: 1.25rem; }
+.exam-viewer { flex: 1; min-height: 0; display: flex; }
+.exam-frame { flex: 1; width: 100%; border: 0; background: #3b3f46; }
+.exam-state { margin: auto; display: flex; flex-direction: column; align-items: center; gap: 0.75rem; color: #e5e7eb; font-size: 0.95rem; text-align: center; padding: 1rem; }
 
-@page {
-  size: A4;
-  margin: 0;
-}
-
-@media print {
-  html, body { background: #fff !important; height: auto !important; overflow: visible !important; }
-  body.exam-printing > *:not(.exam-overlay) { display: none !important; }
-  .exam-overlay { position: static; display: block; background: #fff; }
-  .exam-bar { display: none !important; }
-  .exam-scroll { overflow: visible; padding: 0; }
-  .exam-scroll .exam-sheet { box-shadow: none; margin: 0; width: auto; min-height: 0; padding: 0; }
-  .exam-sheet { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-}
-
-@media print {
-  @page {
-    size: A4;
-    margin: 15mm 14mm 17mm;
-    @bottom-center { content: 'Page ' counter(page) ' of ' counter(pages); font: 9pt 'Times New Roman', Times, serif; color: #444; }
-  }
-}
+/* Offscreen sheets the PDF is drawn from: exactly the printed content width. */
+.exam-raster { position: fixed; left: -10000px; top: 0; width: 182mm; background: #fff; pointer-events: none; }
+.exam-raster .exam-sheet { width: 182mm; min-height: 0; margin: 0; padding: 0; }

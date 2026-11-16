@@ -43,7 +43,7 @@ function Logo({ className = '' }: { className?: string }) {
   return (
     <Link to="/" className={`flex items-center gap-2.5 ${className}`}>
       <LogoMark className="size-8 shrink-0" />
-      <span className="font-semibold tracking-tight">{brand.name}</span>
+      <span className="whitespace-nowrap font-semibold tracking-tight">{brand.name}</span>
     </Link>
   );
 }

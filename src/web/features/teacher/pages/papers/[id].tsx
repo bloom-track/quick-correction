@@ -11,7 +11,7 @@ import {
   Button, Input, FormField, Badge, Alert, AlertDescription, toast, useConfirm,
   Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter,
 } from '@bloomneo/uikit';
-import { ArrowLeft, FlaskConical, UserPlus, FileDown, Trash2, Eye, EyeOff, Loader2, AlertTriangle } from 'lucide-react';
+import { ArrowLeft, FlaskConical, UserPlus, FileDown, Trash2, Eye, EyeOff, ChevronDown, Loader2, AlertTriangle } from 'lucide-react';
 import { SEO } from '@/shared/SEO';
 import { api } from '@/shared/api';
 import { useLoad, fmtDate, inDays } from '../../lib/useLoad';
@@ -30,6 +30,7 @@ export default function PaperPage() {
   const [answers, setAnswers] = React.useState(false);
   const [testing, setTesting] = React.useState(false);
   const [preview, setPreview] = React.useState(false);
+  const [showSet, setShowSet] = React.useState(false);
 
   const [assigning, setAssigning] = React.useState(false);
   const [students, setStudents] = React.useState<Student[]>([]);
@@ -112,15 +113,28 @@ export default function PaperPage() {
         </div>
       </div>
 
-      <section className="mb-8 print:hidden">
-        <h2 className="mb-2 font-semibold">Set for</h2>
-        {data.submissions.length === 0 ? (
-          <p className="rounded-xl border border-dashed border-border p-6 text-center text-sm text-muted-foreground">Not set for anyone yet. Use <strong>Test it</strong> to try it yourself, or set it for your students.</p>
+      <section className="mb-5 print:hidden">
+        <button
+          type="button"
+          aria-expanded={showSet}
+          onClick={() => setShowSet((v) => !v)}
+          className="flex w-full cursor-pointer items-center gap-2 rounded-2xl bg-card px-4 py-2.5 text-left text-sm ring-1 ring-border transition hover:bg-muted/50"
+        >
+          <span className="font-semibold">Set for</span>
+          <span className="min-w-0 flex-1 truncate text-muted-foreground">
+            {data.submissions.length === 0
+              ? 'No one yet'
+              : `${data.submissions.length} student${data.submissions.length === 1 ? '' : 's'} · ${data.submissions.filter((s) => s.status === 'evaluated').length} marked`}
+          </span>
+          <ChevronDown className={`size-4 shrink-0 text-muted-foreground transition-transform ${showSet ? 'rotate-180' : ''}`} />
+        </button>
+        {showSet && (data.submissions.length === 0 ? (
+          <p className="mt-2 rounded-2xl border border-dashed border-border p-4 text-center text-sm text-muted-foreground">Not set for anyone yet. Use <strong>Test it</strong> to try it yourself, or set it for your students.</p>
         ) : (
-          <ul className="divide-y divide-border rounded-xl border border-border">
+          <ul className="mt-2 divide-y divide-border rounded-2xl border border-border">
             {data.submissions.map((s) => (
               <li key={s.id}>
-                <Link to={`/teacher/results/${s.id}`} className="flex items-center gap-3 px-4 py-3 hover:bg-muted/50">
+                <Link to={`/teacher/results/${s.id}`} className="flex items-center gap-3 px-4 py-2.5 hover:bg-muted/50">
                   <span className="min-w-0 flex-1 truncate font-medium">{s.student.name}</span>
                   <span className="hidden text-xs text-muted-foreground sm:inline">Due {fmtDate(s.dueDate)}</span>
                   {s.status === 'evaluated' && s.max ? <Badge variant="secondary">{s.score}/{s.max}</Badge> : null}
@@ -129,7 +143,7 @@ export default function PaperPage() {
               </li>
             ))}
           </ul>
-        )}
+        ))}
       </section>
 
       <div className="mb-3 flex items-center justify-between print:hidden">

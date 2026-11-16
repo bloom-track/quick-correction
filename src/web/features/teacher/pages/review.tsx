@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Alert, AlertDescription } from '@bloomneo/uikit';
 import { ChevronRight, Loader2, AlertTriangle, ClipboardCheck } from 'lucide-react';
 import { SEO } from '@/shared/SEO';
+import { CARD } from '@/shared/ui';
 import { api } from '@/shared/api';
 import { useLoad, fmtDate } from '../lib/useLoad';
 import type { ReviewRow } from '../lib/types';
@@ -14,19 +15,19 @@ export default function ReviewPage() {
   return (
     <>
       <SEO title="Review" />
-      <h1 className="mb-2 text-2xl font-semibold">Review</h1>
+      <h1 className="mb-2 text-[28px] font-extrabold leading-tight tracking-[-0.03em] sm:text-3xl">Review</h1>
       <p className="mb-6 text-sm text-muted-foreground">Marks to check before parents rely on them.</p>
       {loading ? (
         <div className="grid place-items-center py-16"><Loader2 className="size-5 animate-spin text-muted-foreground" aria-label="Loading" /></div>
       ) : error || !data ? (
         <Alert variant="destructive"><AlertTriangle className="size-4" /><AlertDescription>{error}</AlertDescription></Alert>
       ) : data.length === 0 ? (
-        <div className="flex flex-col items-center gap-2 rounded-xl border border-dashed border-border py-16 text-center text-muted-foreground">
+        <div className="flex flex-col items-center gap-2 rounded-[20px] border border-dashed border-border py-16 text-center text-muted-foreground">
           <ClipboardCheck className="size-8" aria-hidden />
           <p>Nothing to check.</p>
         </div>
       ) : (
-        <ul className="divide-y divide-border rounded-xl border border-border">
+        <ul className={`${CARD} divide-y divide-border/70 overflow-hidden`}>
           {data.map((s) => (
             <li key={s.id}>
               <Link to={`/teacher/results/${s.id}`} className="flex items-center gap-3 px-4 py-3 hover:bg-muted/50">

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Button, Badge, Alert, AlertDescription, toast, useConfirm } from '@bloomneo/uikit';
 import { Plus, Trash2, Loader2, AlertTriangle, ChevronRight, FileText } from 'lucide-react';
 import { SEO } from '@/shared/SEO';
+import { CARD } from '@/shared/ui';
 import { api } from '@/shared/api';
 import { useLoad, fmtDate } from '../../lib/useLoad';
 import type { PaperRow } from '../../lib/types';
@@ -29,7 +30,7 @@ export default function PapersPage() {
     <>
       <SEO title="Papers" />
       <div className="mb-6 flex items-center justify-between gap-3">
-        <h1 className="text-2xl font-semibold">Papers</h1>
+        <h1 className="text-[28px] font-extrabold leading-tight tracking-[-0.03em] sm:text-3xl">Papers</h1>
         <Button asChild><Link to="/teacher/papers/new"><Plus className="size-4" /> New paper</Link></Button>
       </div>
 
@@ -38,13 +39,13 @@ export default function PapersPage() {
       ) : error || !data ? (
         <Alert variant="destructive"><AlertTriangle className="size-4" /><AlertDescription>{error}</AlertDescription></Alert>
       ) : data.length === 0 ? (
-        <div className="flex flex-col items-center gap-3 rounded-xl border border-dashed border-border py-16 text-center text-muted-foreground">
+        <div className="flex flex-col items-center gap-3 rounded-[20px] border border-dashed border-border py-16 text-center text-muted-foreground">
           <FileText className="size-8" aria-hidden />
           <p>No papers yet.</p>
           <Button asChild><Link to="/teacher/papers/new">Make a paper</Link></Button>
         </div>
       ) : (
-        <ul className="divide-y divide-border rounded-xl border border-border">
+        <ul className={`${CARD} divide-y divide-border/70 overflow-hidden`}>
           {data.map((p) => (
             <li key={p.id} className="flex items-center gap-2 pr-2">
               <Link to={`/teacher/papers/${p.id}`} className="flex min-w-0 flex-1 items-center gap-3 px-4 py-3 hover:bg-muted/50">

@@ -9,6 +9,7 @@ import {
 } from '@bloomneo/uikit';
 import { Plus, Copy, Loader2, AlertTriangle, Users, Check, Pencil, Trash2, Search, ListPlus } from 'lucide-react';
 import { SEO } from '@/shared/SEO';
+import { CARD } from '@/shared/ui';
 import { api } from '@/shared/api';
 import { useLoad } from '../../lib/useLoad';
 import type { Student } from '../../lib/types';
@@ -94,7 +95,7 @@ export default function StudentsPage() {
     <>
       <SEO title="Students" />
       <div className="mb-2 flex flex-wrap items-center justify-between gap-3">
-        <h1 className="text-2xl font-semibold">Students</h1>
+        <h1 className="text-[28px] font-extrabold leading-tight tracking-[-0.03em] sm:text-3xl">Students</h1>
         <div className="flex gap-2">
           <Button variant="outline" onClick={() => setBulk(true)}><ListPlus className="size-4" /> Add several</Button>
           <Button onClick={() => setAdding(true)}><Plus className="size-4" /> Add student</Button>
@@ -107,7 +108,7 @@ export default function StudentsPage() {
       ) : error || !data ? (
         <Alert variant="destructive"><AlertTriangle className="size-4" /><AlertDescription>{error}</AlertDescription></Alert>
       ) : data.length === 0 ? (
-        <div className="flex flex-col items-center gap-3 rounded-xl border border-dashed border-border py-16 text-center text-muted-foreground">
+        <div className="flex flex-col items-center gap-3 rounded-[20px] border border-dashed border-border py-16 text-center text-muted-foreground">
           <Users className="size-8" aria-hidden />
           <p>No students yet.</p>
         </div>
@@ -128,7 +129,7 @@ export default function StudentsPage() {
           )}
         </div>
         {shown.length === 0 && <p className="py-10 text-center text-sm text-muted-foreground">No one matches.</p>}
-        <ul className="divide-y divide-border rounded-xl border border-border">
+        <ul className={`${CARD} divide-y divide-border/70 overflow-hidden`}>
           {shown.map((s) => (
             <li key={s.id} className="px-4 py-3">
               <div className="flex items-start justify-between gap-2">

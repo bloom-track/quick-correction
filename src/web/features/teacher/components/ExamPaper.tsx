@@ -20,10 +20,12 @@ type Props = {
   questions: Question[];
   layout?: LayoutSection[] | null;
   includeAnswers?: boolean;
+  /** Render only the paper, or only the marking scheme (used to build the PDF in parts). */
+  only?: 'paper' | 'key';
 };
 
 /** "180" → "3 hours", "90" → "1 hour 30 minutes", "45" → "45 minutes". */
-function duration(mins: number) {
+export function duration(mins: number) {
   const h = Math.floor(mins / 60), m = mins % 60;
   const hours = h ? `${h} hour${h === 1 ? '' : 's'}` : '';
   const minutes = m ? `${m} minute${m === 1 ? '' : 's'}` : '';
@@ -34,13 +36,13 @@ function duration(mins: number) {
 function width(s: string) {
   return s.replace(/\\[a-zA-Z]+/g, 'x').replace(/[${}\\^_]/g, '').length;
 }
-function columns(options: (string | number)[]) {
+export function columns(options: (string | number)[]) {
   const longest = Math.max(...options.map((o) => width(String(o))));
   return longest <= 14 ? 'c4' : longest <= 46 ? 'c2' : 'c1';
 }
 
 /** Part labels may or may not carry their own brackets. */
-const label = (l: string) => `(${l.replace(/^\(|\)$/g, '')})`;
+export const label = (l: string) => `(${l.replace(/^\(|\)$/g, '')})`;
 
 function Marks({ n }: { n: number }) {
   return <span className="exam-marks">[{n}]</span>;
@@ -96,15 +98,14 @@ function Answer({ q }: { q: Q }) {
   );
 }
 
-export function ExamPaper({ title, eyebrow, durationMins, questions, layout, includeAnswers }: Props) {
+/** Sections in print order, question numbers and the default general instructions. */
+export function paperPlan(questions: Question[]) {
   const total = questions.reduce((n, q) => n + q.marks, 0);
   const order: string[] = [];
   for (const q of questions) if (!order.includes(q.section)) order.push(q.section);
-  // Number questions in the order they print.
   const sections = order.map((s) => ({ title: s, qs: questions.filter((q) => q.section === s) }));
   let n = 0;
   const numbered = sections.map((s) => ({ ...s, items: s.qs.map((q) => ({ q, n: ++n })) }));
-
   const choice = numbered.filter((s) => s.qs.some((q) => q.alternate)).map((s) => s.title.replace(/^Section\s+/i, ''));
   const instructions = [
     `This question paper contains ${questions.length} questions. All questions are compulsory unless an internal choice is given.`,
@@ -113,9 +114,18 @@ export function ExamPaper({ title, eyebrow, durationMins, questions, layout, inc
     'The marks for each question or part are shown in brackets at the right of the page.',
     'Show all the steps of your working. Use of a calculator is not permitted.',
   ];
+  return { total, sections, numbered, instructions };
+}
+
+export function ExamPaper({ title, eyebrow, durationMins, questions, layout, includeAnswers, only }: Props) {
+  const { total, numbered, instructions } = paperPlan(questions);
+
+  const showPaper = only !== 'key';
+  const showKey = only === 'key' || (includeAnswers && only !== 'paper');
 
   return (
     <article className="exam-sheet">
+      {showPaper && (<>
       <header className="exam-head">
         {eyebrow && <p className="exam-eyebrow">{eyebrow}</p>}
         <h1 className="exam-title">{title}</h1>
@@ -168,8 +178,9 @@ export function ExamPaper({ title, eyebrow, durationMins, questions, layout, inc
       })}
 
       <p className="exam-end">— End of question paper —</p>
+      </>)}
 
-      {includeAnswers && (
+      {showKey && (
         <section className="exam-key">
           <div className="exam-section-head">
             <h3>Marking scheme</h3>
