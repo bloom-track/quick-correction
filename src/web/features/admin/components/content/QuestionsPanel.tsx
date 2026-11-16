@@ -312,7 +312,7 @@ export function QuestionsPanel() {
         actions={<Button onClick={() => { setFormError(null); setForm(blank(startTopic())); }} disabled={topics.length === 0}><Plus className="size-4" /> Add question</Button>}
       />
 
-      <div className={`lg:grid lg:gap-6 ${sidePreview ? 'lg:grid-cols-[13rem_minmax(0,1fr)_21rem] xl:grid-cols-[15rem_minmax(0,1fr)_25rem] 2xl:grid-cols-[16rem_minmax(0,1fr)_30rem]' : 'lg:grid-cols-[16rem_minmax(0,1fr)]'}`}>
+      <div className={`lg:grid lg:gap-6 ${sidePreview ? 'lg:grid-cols-[12rem_minmax(15rem,19rem)_minmax(0,1fr)] xl:grid-cols-[14rem_minmax(17rem,22rem)_minmax(0,1fr)] 2xl:grid-cols-[15rem_minmax(19rem,25rem)_minmax(0,1fr)]' : 'lg:grid-cols-[16rem_minmax(0,1fr)]'}`}>
         {/* Side tree: a drawer-style panel under a button on a phone, always open on a wide screen */}
         <aside className="mb-4 lg:mb-0">
           <Button variant="outline" className="w-full justify-between lg:hidden" aria-expanded={treeShown} onClick={() => setTreeShown((v) => !v)}>
