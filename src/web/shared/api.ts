@@ -28,7 +28,7 @@ export type ApiRouteLoose = ApiRoute | (string & {});
  * the API and the dev server are different origins, so a relative path would
  * hit Vite and return index.html — see the guard in `request` below.
  */
-const BASE = import.meta.env.VITE_API_URL ?? 'http://localhost:3000';
+const BASE = import.meta.env.VITE_API_URL ?? (import.meta.env.PROD ? '' : 'http://localhost:3000');
 
 /*
  * The server rejects /api calls without this header in production when

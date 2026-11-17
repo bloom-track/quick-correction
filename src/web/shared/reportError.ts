@@ -26,7 +26,7 @@ import type { ApiRoute } from './api-routes';
 import { lastRequestId } from './api';
 
 const ENDPOINT: ApiRoute = '/api/client-error';
-const BASE = import.meta.env.VITE_API_URL ?? 'http://localhost:3000';
+const BASE = import.meta.env.VITE_API_URL ?? (import.meta.env.PROD ? '' : 'http://localhost:3000');
 const FRONTEND_KEY = import.meta.env.VITE_FRONTEND_KEY as string | undefined;
 
 /** Signatures already sent — the same fault is reported once per page load. */
