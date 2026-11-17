@@ -1,9 +1,10 @@
 /**
  * Set a new password from a emailed token. AuthLayoutRoute supplies the chrome.
  */
+import { PasswordInput } from '@/shared/PasswordInput';
 import * as React from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
-import { Button, Input, FormField, Alert, AlertTitle, AlertDescription, toast } from '@bloomneo/uikit';
+import { Button, FormField, Alert, AlertTitle, AlertDescription, toast } from '@bloomneo/uikit';
 import { AlertTriangle, ArrowLeft, Loader2 } from 'lucide-react';
 import { useAuth } from '../hooks';
 import { SEO } from '@/shared/SEO';
@@ -75,11 +76,11 @@ export default function ResetPasswordPage() {
       )}
       <form onSubmit={onSubmit} className="space-y-4" noValidate>
         <FormField label="New password" required error={pwError} helper="At least 8 characters.">
-          <Input type="password" autoComplete="new-password" placeholder="••••••••"
+          <PasswordInput autoComplete="new-password" placeholder="••••••••"
             value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })} />
         </FormField>
         <FormField label="Confirm password" required error={confirmError}>
-          <Input type="password" autoComplete="new-password" placeholder="••••••••"
+          <PasswordInput autoComplete="new-password" placeholder="••••••••"
             value={form.confirm} onChange={(e) => setForm({ ...form, confirm: e.target.value })} />
         </FormField>
         <Button type="submit" className="w-full" disabled={submitting}>

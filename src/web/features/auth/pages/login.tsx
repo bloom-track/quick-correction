@@ -10,6 +10,7 @@
  * from a CDN, all decided by a component. That is the arrangement UIKit 4.0
  * removed: the shell is the app's, and it is 90 readable lines you can change.
  */
+import { PasswordInput } from '@/shared/PasswordInput';
 import * as React from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import {
@@ -93,9 +94,8 @@ export default function LoginPage() {
               Forgot?
             </Link>
           </div>
-          <Input
+          <PasswordInput
             id="password"
-            type="password"
             autoComplete="current-password"
             placeholder="••••••••"
             value={form.password}

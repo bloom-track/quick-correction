@@ -3,6 +3,7 @@
  *
  * A PAGE — AuthLayoutRoute supplies the chrome. See login.tsx for why.
  */
+import { PasswordInput } from '@/shared/PasswordInput';
 import * as React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import {
@@ -157,8 +158,7 @@ export default function RegisterPage() {
         </FormField>
 
         <FormField label="Password" required error={pwError} helper="At least 8 characters.">
-          <Input
-            type="password"
+          <PasswordInput
             autoComplete="new-password"
             placeholder="••••••••"
             value={form.password}

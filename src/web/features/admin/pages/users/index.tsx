@@ -6,6 +6,7 @@
  * reset passwords, and sign in as a teacher or parent to see their screens.
  * Data comes from `/api/people`.
  */
+import { PasswordInput } from '@/shared/PasswordInput';
 import * as React from 'react';
 import { useSearchParams } from 'react-router-dom';
 import {
@@ -390,7 +391,7 @@ export default function AdminUsersPage() {
               </FormField>
               <div className="sm:col-span-2">
                 <FormField label="Password" helper="Leave blank to generate a temporary one you can pass on.">
-                  <Input type="password" autoComplete="new-password" value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })} />
+                  <PasswordInput autoComplete="new-password" value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })} />
                 </FormField>
               </div>
             </div>
