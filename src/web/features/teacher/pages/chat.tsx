@@ -161,7 +161,18 @@ export default function ChatPage() {
     const pat = findPattern(said, subject);
     if (pat) next.patternId = pat;
     const ch = findChapters(said, subject.chapters);
-    if (ch.length) next.chapterIds = ch;
+    if (ch.length) {
+      // "add statistics" keeps what is already chosen; "drop/without statistics" removes it.
+      const current = draft.chapterIds?.length ? draft.chapterIds : subject.chapters.map((c) => c.id);
+      if (/\b(add|also|include|plus|along with)\b/.test(t)) {
+        next.chapterIds = draft.chapterIds?.length ? [...new Set([...draft.chapterIds, ...ch])] : draft.chapterIds;
+      } else if (/\b(remove|drop|without|exclude|except|skip)\b/.test(t)) {
+        const left = current.filter((id) => !ch.includes(id));
+        next.chapterIds = left.length ? left : current;
+      } else {
+        next.chapterIds = ch;
+      }
+    }
     const marks = t.match(/(\d{2,3})\s*marks?/);
     if (marks) next.marks = Number(marks[1]);
     if (/\b(shorter|quick)\b/.test(t) && !marks) next.marks = 30;
